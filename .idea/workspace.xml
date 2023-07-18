@@ -5,28 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/HelloWorldWithCommandLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/HelloWorldDecoupled.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/HelloWorldDecoupledWithFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/HelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/HelloWorldWithServiceLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/MessageSupportFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/decoupled/StandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/resources/META-INF/services/com.ceva.prospring6.two.decoupled.MessageProvider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/resources/META-INF/services/com.ceva.prospring6.two.decoupled.MessageRenderer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/resources/msf.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/ContextualizedDependencyLookupDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/DefaultContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/HelloWorldMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/ManagedComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/MessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/MessageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/StandardOutMessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/annotated/HelloWorldSpringAnnotated.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/prospring6/two/annotated/HelloWorldSpringAnnotated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +53,10 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Test/local-projects/IntellijProjects/local-pro-spring6/capitulo3/src/main/java/com/ceva/prospring6/two/decoupled",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,9 +66,27 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HelloWorldWithServiceLoader">
-    <configuration name="HelloWorldDecoupled" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.decoupled.HelloWorldDecoupled" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Test\local-projects\IntellijProjects\local-pro-spring6\capitulo3\src\main\java\com\ceva\prospring6\two\decoupled" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ContextualizedDependencyLookupDemo">
+    <configuration name="ContextualizedDependencyLookupDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.decoupled.decoupled.ContextualizedDependencyLookupDemo" />
+      <module name="capitulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.prospring6.three.decoupled.decoupled.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldDecoupledWithFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.decoupled.HelloWorldDecoupledWithFactory" />
       <module name="capitulo2" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +98,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldDecoupledWithFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.decoupled.HelloWorldDecoupledWithFactory" />
+    <configuration name="HelloWorldSpringAnnotated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.annotated.HelloWorldSpringAnnotated" />
+      <module name="capitulo2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.prospring6.two.annotated.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldSpringDI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.decoupled.HelloWorldSpringDI" />
       <module name="capitulo2" />
       <extension name="coverage">
         <pattern>
@@ -113,9 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ContextualizedDependencyLookupDemo" />
+        <item itemvalue="Application.HelloWorldSpringAnnotated" />
+        <item itemvalue="Application.HelloWorldSpringDI" />
         <item itemvalue="Application.HelloWorldWithServiceLoader" />
         <item itemvalue="Application.HelloWorldDecoupledWithFactory" />
-        <item itemvalue="Application.HelloWorldDecoupled" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +156,11 @@
       <option name="presentableId" value="Default" />
       <updated>1689389788145</updated>
       <workItem from="1689389789181" duration="2356000" />
-      <workItem from="1689440300452" duration="15957000" />
+      <workItem from="1689440300452" duration="17906000" />
+      <workItem from="1689544369709" duration="4129000" />
+      <workItem from="1689606854044" duration="597000" />
+      <workItem from="1689616048750" duration="5000" />
+      <workItem from="1689622778625" duration="4542000" />
     </task>
     <servers />
   </component>
