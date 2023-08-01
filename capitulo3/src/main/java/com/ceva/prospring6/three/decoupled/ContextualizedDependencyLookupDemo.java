@@ -1,4 +1,4 @@
-package com.ceva.prospring6.three.decoupled.decoupled;
+package com.ceva.prospring6.three.decoupled;
 
 public class ContextualizedDependencyLookupDemo {
     public static void main(String[] args) {

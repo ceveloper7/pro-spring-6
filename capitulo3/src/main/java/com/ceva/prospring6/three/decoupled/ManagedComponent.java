@@ -1,4 +1,4 @@
-package com.ceva.prospring6.three.decoupled.decoupled;
+package com.ceva.prospring6.three.decoupled;
 
 /*
  * La Busqueda de dependencia contextualizada funciona haciendo que el componente que requiere
