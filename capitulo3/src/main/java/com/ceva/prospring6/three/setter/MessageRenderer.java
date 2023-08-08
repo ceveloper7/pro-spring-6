@@ -1,7 +1,5 @@
-package com.ceva.prospring6.three.constructor;
+package com.ceva.prospring6.three.setter;
 
-
-import com.ceva.prospring6.three.constructor.MessageProvider;
 
 /*
  * Service provider interface (SPI)

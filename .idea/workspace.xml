@@ -5,22 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldSpringAnnotated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/StandardOutMessageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/collectioninject/CollectionInjectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/valinject/InjectSimpleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/valinject/InjectSimpleDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/valinject/InjectSimpleSpEL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/ContextualizedDependencyLookupDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/ContextualizedDependencyLookupDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/DefaultContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/DefaultContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/HelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/HelloWorldMessageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/ManagedComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/ManagedComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/MessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/MessageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/MessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/MessageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/decoupled/StandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/decoupled/StandardOutMessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/HelloWorldConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/HelloWorldMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldSpringAnnotated.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/HelloWorldSpringAnnotated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/MessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/MessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/MessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/MessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/StandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/StandardOutMessageRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +59,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3595dd88d232b764200e47260831de16&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d0031b7fee67e42fdd410ced8d004f52&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -79,13 +75,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.ceva.prospring6.three.constructor.HelloWorldSpringAnnotated">
-    <configuration name="ContextualizedDependencyLookupDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.decoupled.decoupled.ContextualizedDependencyLookupDemo" />
+  <component name="RunManager" selected="Application.CollectionInjectionDemo">
+    <configuration name="CollectionInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.collectioninject.CollectionInjectionDemo" />
       <module name="capitulo3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.three.decoupled.decoupled.*" />
+          <option name="PATTERN" value="com.ceva.prospring6.three.collectioninject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,38 +102,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldSpringDI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.decoupled.HelloWorldSpringDI" />
-      <module name="capitulo2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.two.decoupled.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorldWithServiceLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.decoupled.HelloWorldWithServiceLoader" />
-      <module name="capitulo2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.two.decoupled.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.ceva.prospring6.three.constructor.HelloWorldSpringAnnotated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.constructor.HelloWorldSpringAnnotated" />
+    <configuration name="InjectSimpleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.valinject.InjectSimpleDemo" />
       <module name="capitulo3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.three.constructor.*" />
+          <option name="PATTERN" value="com.ceva.prospring6.three.valinject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InjectSimpleSpEL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.valinject.InjectSimpleSpEL" />
+      <module name="capitulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.prospring6.three.valinject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ceva.prospring6.three.setter.HelloWorldSpringAnnotated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.setter.HelloWorldSpringAnnotated" />
+      <module name="capitulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.prospring6.three.setter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.ceva.prospring6.three.constructor.HelloWorldSpringAnnotated" />
+        <item itemvalue="Application.CollectionInjectionDemo" />
+        <item itemvalue="Application.InjectSimpleSpEL" />
+        <item itemvalue="Application.InjectSimpleDemo" />
+        <item itemvalue="Application.com.ceva.prospring6.three.setter.HelloWorldSpringAnnotated" />
         <item itemvalue="Application.HelloWorldSpringAnnotated" />
-        <item itemvalue="Application.ContextualizedDependencyLookupDemo" />
-        <item itemvalue="Application.HelloWorldSpringDI" />
-        <item itemvalue="Application.HelloWorldWithServiceLoader" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +166,10 @@
       <workItem from="1689616048750" duration="5000" />
       <workItem from="1689622778625" duration="4547000" />
       <workItem from="1690230815868" duration="2724000" />
-      <workItem from="1690829486438" duration="15228000" />
+      <workItem from="1690829486438" duration="15900000" />
+      <workItem from="1691021735277" duration="1054000" />
+      <workItem from="1691022928549" duration="4249000" />
+      <workItem from="1691443832002" duration="6912000" />
     </task>
     <servers />
   </component>

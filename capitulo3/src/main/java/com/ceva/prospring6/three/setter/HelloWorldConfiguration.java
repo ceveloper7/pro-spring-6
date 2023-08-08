@@ -1,4 +1,4 @@
-package com.ceva.prospring6.three.constructor;
+package com.ceva.prospring6.three.setter;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 // si no se coloca basePackages el scan ocurre desde el paquete de esta clase
-@ComponentScan(basePackages = "com.ceva.prospring6.three.constructor")
+@ComponentScan(basePackages = "com.ceva.prospring6.three.setter")
 public class HelloWorldConfiguration {
     @Bean
     public MessageProvider provider(){

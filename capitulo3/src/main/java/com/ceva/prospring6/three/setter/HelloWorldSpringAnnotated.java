@@ -1,4 +1,4 @@
-package com.ceva.prospring6.three.constructor;
+package com.ceva.prospring6.three.setter;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
