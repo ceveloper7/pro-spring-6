@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/collectioninject/CollectionInjectionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/model/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/valinject/InjectSimpleConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/valinject/InjectSimpleDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/valinject/InjectSimpleSpEL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/HelloWorldWithCommandLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/decoupled/HelloWorldDecoupled.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/decoupled/HelloWorldMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/decoupled/MessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/decoupled/MessageRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/decoupled/StandardOutMessageRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/HelloWorldConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/HelloWorldMessageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/HelloWorldSpringAnnotated.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/HelloWorldSpringAnnotated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/MessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/MessageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/MessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/MessageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/constructor/StandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/setter/StandardOutMessageRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CollectionInjectionDemo">
+  <component name="RunManager" selected="Application.HelloWorldDecoupled">
     <configuration name="CollectionInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.collectioninject.CollectionInjectionDemo" />
       <module name="capitulo3" />
@@ -89,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldSpringAnnotated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.two.annotated.HelloWorldSpringAnnotated" />
-      <module name="capitulo2" />
+    <configuration name="HelloWorldDecoupled" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.decoupled.HelloWorldDecoupled" />
+      <module name="capitulo3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.two.annotated.*" />
+          <option name="PATTERN" value="com.ceva.prospring6.four.decoupled.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloWorldDecoupled" />
         <item itemvalue="Application.CollectionInjectionDemo" />
         <item itemvalue="Application.InjectSimpleSpEL" />
         <item itemvalue="Application.InjectSimpleDemo" />
         <item itemvalue="Application.com.ceva.prospring6.three.setter.HelloWorldSpringAnnotated" />
-        <item itemvalue="Application.HelloWorldSpringAnnotated" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +165,8 @@
       <workItem from="1690829486438" duration="15900000" />
       <workItem from="1691021735277" duration="1054000" />
       <workItem from="1691022928549" duration="4249000" />
-      <workItem from="1691443832002" duration="6912000" />
+      <workItem from="1691443832002" duration="6919000" />
+      <workItem from="1697583430504" duration="7635000" />
     </task>
     <servers />
   </component>
