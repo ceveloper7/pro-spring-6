@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/ContextualizedDependencyLoopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/DefaultContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/HelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/ManagedComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/contextualized_dependency_lookup/StandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/spring_dependency_pull/HelloWorldConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/spring_dependency_pull/HelloWorldSpringAnnotated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/inyectionbyconstructor/HelloWorldInyectionByConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/inyectionbyconstructor/HelloWorldMessageProviderIC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/inyectionbyconstructor/MessageRendererIC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/inyectionbyconstructor/StandardOutMessageRenderIC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/setterinyectiondependency/HelloWordMessageProviderSID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/setterinyectiondependency/HelloWorldSetterDependencyInyection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/setterinyectiondependency/MessageProviderSID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/setterinyectiondependency/MessageRendererSID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/setterinyectiondependency/StandardOutMessageRenderSID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,20 +73,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ContextualizedDependencyLoopup">
-    <configuration name="CollectionInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.collectioninject.CollectionInjectionDemo" />
-      <module name="capitulo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.three.collectioninject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.HelloWorldSetterDependencyInyection">
     <configuration name="ContextualizedDependencyLoopup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.contextualized_dependency_lookup.ContextualizedDependencyLoopup" />
       <module name="capitulo3" />
@@ -114,6 +100,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HelloWorldInyectionByConstructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.inyectionbyconstructor.HelloWorldInyectionByConstructor" />
+      <module name="capitulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.prospring6.four.inyectionbyconstructor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldSetterDependencyInyection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.setterinyectiondependency.HelloWorldSetterDependencyInyection" />
+      <module name="capitulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.prospring6.four.setterinyectiondependency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloWorldSpringAnnotated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.spring_dependency_pull.HelloWorldSpringAnnotated" />
       <module name="capitulo3" />
@@ -127,26 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InjectSimpleSpEL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.three.valinject.InjectSimpleSpEL" />
-      <module name="capitulo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.three.valinject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloWorldSetterDependencyInyection" />
+        <item itemvalue="Application.HelloWorldInyectionByConstructor" />
         <item itemvalue="Application.ContextualizedDependencyLoopup" />
         <item itemvalue="Application.HelloWorldSpringAnnotated" />
         <item itemvalue="Application.HelloWorldDecoupled" />
-        <item itemvalue="Application.CollectionInjectionDemo" />
-        <item itemvalue="Application.InjectSimpleSpEL" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +169,8 @@
       <workItem from="1691022928549" duration="4249000" />
       <workItem from="1691443832002" duration="6919000" />
       <workItem from="1697583430504" duration="7729000" />
-      <workItem from="1698171034158" duration="10242000" />
+      <workItem from="1698171034158" duration="10844000" />
+      <workItem from="1698779748343" duration="6777000" />
     </task>
     <servers />
   </component>
