@@ -98,6 +98,7 @@ class CollectionConfig{
         return props;
     }
 
+    // declaramos 2 beans de tipo Song
     @Bean
     public Song song1(){
         return new Song("Here's to hoping");
