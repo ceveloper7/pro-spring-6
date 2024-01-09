@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/generator/BeanNameGerneratorDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/four/naming/BeanNamingDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo1/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo1/ConnectionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo1/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo2/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo2/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo2/ConnectionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo2/MemoryConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/springDemo2/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/collectioninject/CollectionInjectionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo3/src/main/java/com/ceva/prospring6/three/collectioninject/CollectionInjectionDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +39,10 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2SafoUmtFsJGWU9VdpvBn4oGsI7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,6 +56,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.BeanNameGerneratorDemo.executor": "Run",
     "Application.BeanNamingDemo.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.springDemo2.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -75,7 +86,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BeanNameGerneratorDemo">
+  <component name="RunManager" selected="Application.springDemo2.Main">
     <configuration name="BeanNameGerneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.generator.BeanNameGerneratorDemo" />
       <module name="capitulo3" />
@@ -115,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContextNestingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.nesting.ContextNestingDemo" />
-      <module name="capitulo3" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springDemo1.Main" />
+      <module name="capitulo1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.four.nesting.*" />
+          <option name="PATTERN" value="springDemo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ceva.prospring6.four.setter.HelloWorldSpringAnnotated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.prospring6.four.setter.HelloWorldSpringAnnotated" />
-      <module name="capitulo3" />
+    <configuration name="springDemo2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springDemo2.Main" />
+      <module name="capitulo1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.prospring6.four.setter.*" />
+          <option name="PATTERN" value="springDemo2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.springDemo2.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.BeanNameGerneratorDemo" />
         <item itemvalue="Application.BeanNamingDemo" />
         <item itemvalue="Application.CollectionInjectionDemo" />
-        <item itemvalue="Application.ContextNestingDemo" />
-        <item itemvalue="Application.com.ceva.prospring6.four.setter.HelloWorldSpringAnnotated" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +195,8 @@
       <workItem from="1699969386725" duration="398000" />
       <workItem from="1700005972028" duration="5419000" />
       <workItem from="1701202270777" duration="3502000" />
-      <workItem from="1703011880373" duration="3011000" />
+      <workItem from="1703011880373" duration="6353000" />
+      <workItem from="1704752684297" duration="5679000" />
     </task>
     <servers />
   </component>

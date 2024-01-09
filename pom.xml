@@ -11,6 +11,7 @@
     <modules>
         <module>capitulo2</module>
         <module>capitulo3</module>
+        <module>capitulo1</module>
     </modules>
 
     <properties>
