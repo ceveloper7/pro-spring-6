@@ -6,6 +6,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class IC_DependencyPullSample {
     public static void main(String[] args) {
+        // para las clases de configuracion se utiliza la implementacion AnnotationConfigApplicationContext
+        // su equivalente con capacidad web es AnnotationConfigWebApplicationContext
+        // ctx es una instancia de un contenedor Inversion del Control de Spring
         ApplicationContext ctx = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
         // extraemos la instancia de la clase (StandardOutMessageRender)
         // que implementa el bean MRender

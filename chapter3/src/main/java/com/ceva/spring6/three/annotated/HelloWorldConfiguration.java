@@ -7,6 +7,9 @@ import com.ceva.spring6.three.decoupled.StandardOutMessageRender;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Clase simple de configuracion
+ */
 @Configuration
 public class HelloWorldConfiguration {
     @Bean
