@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor/ConstructorConfusion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIHelloWorldConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIHelloWorldMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIStandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SetterInjectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_dependecy_injection/FieldDependencyInjectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_dependecy_injection/Kit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_dependecy_injection/Part.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/InjectSimpleDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/HelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/HelloWorldConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/IC_DependencyPullSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/IC_DependencyPullSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor_dependency_injection/CDIHelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor_dependency_injection/CDIHelloWorldConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIHelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIHelloWorldConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIHelloWorldMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIHelloWorldMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIMessageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIMessageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIMessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SIStandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIStandardOutMessageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_injection/SetterInjectionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SetterInjectionDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +56,12 @@
     "Application.CDLDemo.executor": "Debug",
     "Application.ConstructorConfusion.executor": "Run",
     "Application.ConstructorDependencyInjectionDemo.executor": "Run",
+    "Application.FieldDependencyInjectionDemo.executor": "Run",
     "Application.HelloWorldDecoupled.executor": "Run",
     "Application.IC_DependencyPullSample.executor": "Run",
+    "Application.InjectSimpleDemo.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.SetterInjectionDemo.executor": "Run",
     "Application.springDemo2.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -81,6 +84,7 @@
       <recent name="C:\Users\Test\local-projects\IntellijProjects\local-pro-spring6\capitulo3\src\main\java\com\ceva\prospring6\two\decoupled" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ceva.spring6.three.field_dependecy_injection" />
       <recent name="com.ceva.prospring6.three.constructor" />
       <recent name="com.ceva.prospring6.three.setter" />
     </key>
@@ -88,20 +92,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SetterInjectionDemo">
-    <configuration name="CDLDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.contextualized_dependency_lookup.CDLDemo" />
-      <module name="chapter3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.contextualized_dependency_lookup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.InjectSimpleDemo">
     <configuration name="ConstructorConfusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.constructor.ConstructorConfusion" />
       <module name="chapter3" />
@@ -128,12 +119,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IC_DependencyPullSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.annotated.IC_DependencyPullSample" />
+    <configuration name="FieldDependencyInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.field_dependecy_injection.FieldDependencyInjectionDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.annotated.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.field_dependecy_injection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InjectSimpleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.validinject.InjectSimpleDemo" />
+      <module name="chapter3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.three.validinject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +146,11 @@
       </method>
     </configuration>
     <configuration name="SetterInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.setter_injection.SetterInjectionDemo" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.setter_dependency_injection.SetterInjectionDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.setter_injection.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.field_dependecy_injection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InjectSimpleDemo" />
+        <item itemvalue="Application.FieldDependencyInjectionDemo" />
         <item itemvalue="Application.SetterInjectionDemo" />
         <item itemvalue="Application.ConstructorConfusion" />
         <item itemvalue="Application.ConstructorDependencyInjectionDemo" />
-        <item itemvalue="Application.IC_DependencyPullSample" />
-        <item itemvalue="Application.CDLDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +204,8 @@
       <workItem from="1703011880373" duration="6353000" />
       <workItem from="1704752684297" duration="7292000" />
       <workItem from="1705007823344" duration="14616000" />
-      <workItem from="1705414006690" duration="7396000" />
+      <workItem from="1705414006690" duration="7833000" />
+      <workItem from="1705619300884" duration="3003000" />
     </task>
     <servers />
   </component>

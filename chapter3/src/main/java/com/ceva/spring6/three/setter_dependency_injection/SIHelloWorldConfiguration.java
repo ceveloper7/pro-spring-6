@@ -1,4 +1,4 @@
-package com.ceva.spring6.three.setter_injection;
+package com.ceva.spring6.three.setter_dependency_injection;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,6 +8,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan(basePackages = "com.ceva.spring6.three.setter_injection")
+@ComponentScan(basePackages = "com.ceva.spring6.three.setter_dependency_injection")
 public class SIHelloWorldConfiguration {
 }

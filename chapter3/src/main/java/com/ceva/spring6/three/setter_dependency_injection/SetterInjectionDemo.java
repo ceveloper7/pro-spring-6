@@ -1,4 +1,4 @@
-package com.ceva.spring6.three.setter_injection;
+package com.ceva.spring6.three.setter_dependency_injection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
