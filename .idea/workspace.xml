@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/method_inject/AbstractLockOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/method_inject/KeyHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/method_inject/LockOpener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/method_inject/LookupConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/method_inject/MethodInjectionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/method_inject/StandardLockOpener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/beannamegenerator/BeanNameGerneratorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/naming/BeanNamingCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/naming/BeanNamingDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/naming/SimpleBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/nosingleton/NonSingletonDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -58,6 +58,7 @@
     "Application.InjectSimpleDemo.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MethodInjectionDemo.executor": "Run",
+    "Application.NonSingletonDemo.executor": "Run",
     "Application.SetterInjectionDemo.executor": "Run",
     "Application.springDemo2.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -89,13 +90,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MethodInjectionDemo">
-    <configuration name="ConstructorConfusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.constructor.ConstructorConfusion" />
+  <component name="RunManager" selected="Application.NonSingletonDemo">
+    <configuration name="BeanNameGerneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.beannamegenerator.BeanNameGerneratorDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.constructor.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.beannamegenerator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FieldDependencyInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.field_dependecy_injection.FieldDependencyInjectionDemo" />
+    <configuration name="BeanNamingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.naming.BeanNamingDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.field_dependecy_injection.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.naming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetterInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.setter_dependency_injection.SetterInjectionDemo" />
+    <configuration name="NonSingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.nosingleton.NonSingletonDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.field_dependecy_injection.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.nosingleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NonSingletonDemo" />
+        <item itemvalue="Application.BeanNameGerneratorDemo" />
+        <item itemvalue="Application.BeanNamingDemo" />
         <item itemvalue="Application.MethodInjectionDemo" />
         <item itemvalue="Application.InjectSimpleDemo" />
-        <item itemvalue="Application.FieldDependencyInjectionDemo" />
-        <item itemvalue="Application.SetterInjectionDemo" />
-        <item itemvalue="Application.ConstructorConfusion" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +204,8 @@
       <workItem from="1705007823344" duration="14616000" />
       <workItem from="1705414006690" duration="7833000" />
       <workItem from="1705619300884" duration="3675000" />
-      <workItem from="1706020158566" duration="5785000" />
+      <workItem from="1706020158566" duration="5860000" />
+      <workItem from="1706221060034" duration="4041000" />
     </task>
     <servers />
   </component>
