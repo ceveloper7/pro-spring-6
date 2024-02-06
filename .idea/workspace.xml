@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/AnotherTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/AutowiringCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/AutowiringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/Bar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/FieldTarget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/Foo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/InitMethodDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/Singer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/SingerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/InitializingBeanDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/Singer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/SingerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,8 @@
     "Application.FieldDependencyInjectionDemo.executor": "Run",
     "Application.HelloWorldDecoupled.executor": "Run",
     "Application.IC_DependencyPullSample.executor": "Run",
+    "Application.InitMethodDemo.executor": "Run",
+    "Application.InitializingBeanDemo.executor": "Run",
     "Application.InjectSimpleDemo.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MethodInjectionDemo.executor": "Run",
@@ -90,10 +94,11 @@
       <recent name="com.ceva.prospring6.three.setter" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ceva.spring6.four.intf" />
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AutowiringDemo">
+  <component name="RunManager" selected="Application.InitializingBeanDemo">
     <configuration name="AutowiringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.autowiring.AutowiringDemo" />
       <module name="chapter3" />
@@ -120,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanNamingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.naming.BeanNamingDemo" />
-      <module name="chapter3" />
+    <configuration name="InitMethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.initmethod.InitMethodDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.naming.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.initmethod.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MethodInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.method_inject.MethodInjectionDemo" />
-      <module name="chapter3" />
+    <configuration name="InitializingBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.intf.InitializingBeanDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.method_inject.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.intf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InitializingBeanDemo" />
+        <item itemvalue="Application.InitMethodDemo" />
         <item itemvalue="Application.AutowiringDemo" />
         <item itemvalue="Application.NonSingletonDemo" />
         <item itemvalue="Application.BeanNameGerneratorDemo" />
-        <item itemvalue="Application.BeanNamingDemo" />
-        <item itemvalue="Application.MethodInjectionDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +214,8 @@
       <workItem from="1705619300884" duration="3675000" />
       <workItem from="1706020158566" duration="5860000" />
       <workItem from="1706221060034" duration="4041000" />
-      <workItem from="1706631488578" duration="3125000" />
+      <workItem from="1706631488578" duration="4324000" />
+      <workItem from="1707242220825" duration="5884000" />
     </task>
     <servers />
   </component>
