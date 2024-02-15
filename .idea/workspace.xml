@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250/PostConstructDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250/Singer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250/SingerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/AllInitMethodsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/Dependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/MultiInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/MultiInitConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DemoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DestroyMethodDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/DemoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/DisposableBeanDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,12 +52,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AllInitMethodsDemo.executor": "Run",
     "Application.AutowiringDemo.executor": "Run",
     "Application.BeanNameGerneratorDemo.executor": "Run",
     "Application.BeanNamingDemo.executor": "Run",
     "Application.CDLDemo.executor": "Debug",
     "Application.ConstructorConfusion.executor": "Run",
     "Application.ConstructorDependencyInjectionDemo.executor": "Run",
+    "Application.DestroyMethodDemo.executor": "Run",
+    "Application.DisposableBeanDemo.executor": "Run",
     "Application.FieldDependencyInjectionDemo.executor": "Run",
     "Application.HelloWorldDecoupled.executor": "Run",
     "Application.IC_DependencyPullSample.executor": "Run",
@@ -93,13 +103,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PostConstructDemo">
-    <configuration name="AutowiringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.autowiring.AutowiringDemo" />
-      <module name="chapter3" />
+  <component name="RunManager" selected="Application.DisposableBeanDemo">
+    <configuration name="AllInitMethodsDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.all.AllInitMethodsDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.autowiring.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.all.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +117,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InitMethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.initmethod.InitMethodDemo" />
+    <configuration name="DestroyMethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.destroymethod.DestroyMethodDemo" />
       <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.initmethod.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.destroymethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DisposableBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.intf.DisposableBeanDemo" />
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.four.intf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,19 +149,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ceva.spring6.four.intf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NonSingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.nosingleton.NonSingletonDemo" />
-      <module name="chapter3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.nosingleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DisposableBeanDemo" />
+        <item itemvalue="Application.DestroyMethodDemo" />
+        <item itemvalue="Application.AllInitMethodsDemo" />
         <item itemvalue="Application.PostConstructDemo" />
         <item itemvalue="Application.InitializingBeanDemo" />
-        <item itemvalue="Application.InitMethodDemo" />
-        <item itemvalue="Application.AutowiringDemo" />
-        <item itemvalue="Application.NonSingletonDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +221,8 @@
       <workItem from="1706221060034" duration="4041000" />
       <workItem from="1706631488578" duration="4324000" />
       <workItem from="1707242220825" duration="5884000" />
-      <workItem from="1707856192546" duration="2854000" />
+      <workItem from="1707856192546" duration="2927000" />
+      <workItem from="1708021421607" duration="4610000" />
     </task>
     <servers />
   </component>
