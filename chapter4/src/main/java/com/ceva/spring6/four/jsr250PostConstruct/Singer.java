@@ -1,4 +1,4 @@
-package com.ceva.spring6.four.jsr250;
+package com.ceva.spring6.four.jsr250PostConstruct;
 
 import jakarta.annotation.PostConstruct;
 import org.apache.commons.lang3.builder.ToStringBuilder;

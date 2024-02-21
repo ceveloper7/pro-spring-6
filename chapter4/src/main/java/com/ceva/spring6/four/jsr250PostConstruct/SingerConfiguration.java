@@ -1,12 +1,9 @@
-package com.ceva.spring6.four.jsr250;
+package com.ceva.spring6.four.jsr250PostConstruct;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 @Configuration
 @ComponentScan(basePackages = "com.ceva.spring6.four")
 public class SingerConfiguration {

@@ -1,4 +1,4 @@
-package com.ceva.spring6.four.jsr250;
+package com.ceva.spring6.four.jsr250PostConstruct;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
