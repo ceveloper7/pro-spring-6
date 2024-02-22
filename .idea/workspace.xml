@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/AwareConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/AwareDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/NamedSinger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/ShutdownHookBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/DemoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/PreDestroyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250/PostConstructDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/PostConstructDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/Singer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250/SingerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/SingerConfiguration.java" afterDir="false" />
-    </list>
+    <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +213,7 @@
       <workItem from="1707242220825" duration="5884000" />
       <workItem from="1707856192546" duration="2927000" />
       <workItem from="1708021421607" duration="5370000" />
-      <workItem from="1708457229267" duration="3980000" />
+      <workItem from="1708457229267" duration="4581000" />
     </task>
     <servers />
   </component>
