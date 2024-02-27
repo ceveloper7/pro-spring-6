@@ -6,8 +6,9 @@ import org.springframework.beans.factory.InitializingBean;
 import java.security.MessageDigest;
 
 /**
- * NessageDisgestFactoryBean pasa un clon de la instancia MessageDigest almacenada
+ * MessageDisgestFactoryBean pasa un clon de la instancia MessageDigest almacenada
  * que se crea en el callback de inicializacion InitializingBean.afterPropertiesSet()
+ * Spring se encargara de la gestion del objeto MessageDigest
  */
 public class MessageDigestFactoryBean implements FactoryBean<MessageDigest>, InitializingBean {
     private String algorithmName = "MD5";
@@ -15,7 +16,7 @@ public class MessageDigestFactoryBean implements FactoryBean<MessageDigest>, Ini
     private MessageDigest messageDigest = null;
 
     /**
-     * Reacuperamos el objeto messageDigest creado por el Factorybean
+     * Spring llama a este metodo Reacuperamos el objeto messageDigest creado por el Factorybean
      */
     @Override /** @Implements {@link FactoryBean#getObject()} */
     public MessageDigest getObject() throws Exception {
@@ -39,8 +40,12 @@ public class MessageDigestFactoryBean implements FactoryBean<MessageDigest>, Ini
         return true;
     }
 
+    /**
+     * Pasamos un clon de la instancia MessageDigest
+     */
     @Override /** @Implements {@link InitializingBean#afterPropertiesSet()} */
     public void afterPropertiesSet() throws Exception {
+        // Obtenemos una implementacion concreta MessageDigest pasando el algoritmo
         messageDigest = MessageDigest.getInstance(algorithmName);
     }
 
