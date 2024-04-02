@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--  %d{HH:mm:ss} [%thread] %-5p %class{0}.%method:%L - %m%n  -->
+            <pattern> %-5level: %class{0} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!--  Cambiamos el nivel de registro de debug
+          En el nivel debug la app generara todas las declaraciones sql que se
+          enviaran a la BD para saber lo que esta sucediendo exactamente -->
+    <logger name="com.ceva.spring6.six" level="debug"/>
+
+    <logger name="org.springframework" level="off"/>
+
+    <root level="info">
+        <appender-ref ref="console" />
+    </root>
+</configuration>
