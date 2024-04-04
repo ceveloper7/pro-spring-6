@@ -2,9 +2,9 @@ package com.ceva.spring6.six.plain.dao.pojos;
 
 import com.ceva.spring6.six.plain.pojos.Singer;
 
-import static com.ceva.spring6.six.plain.QueryConstants.ALL_SELECT;
-import static com.ceva.spring6.six.plain.QueryConstants.SIMPLE_INSERT;
-import static com.ceva.spring6.six.plain.QueryConstants.SIMPLE_DELETE;
+import static com.ceva.spring6.six.QueryConstants.ALL_SELECT;
+import static com.ceva.spring6.six.QueryConstants.SIMPLE_INSERT;
+import static com.ceva.spring6.six.QueryConstants.SIMPLE_DELETE;
 
 import java.util.Optional;
 import java.util.Set;

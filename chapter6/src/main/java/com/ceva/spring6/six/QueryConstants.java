@@ -1,4 +1,4 @@
-package com.ceva.spring6.six.plain;
+package com.ceva.spring6.six;
 
 public enum QueryConstants {
     ;

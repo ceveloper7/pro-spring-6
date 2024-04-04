@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
+
+/**
+ * Pojo simple de un registro de la tabla Singer
+ */
 public class Singer implements Serializable{
     private static final long serialVersionUID = 1L;
     private Long id;
