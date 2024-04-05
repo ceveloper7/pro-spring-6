@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/config/MysqlErrorCodesTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/hybrid/JdbcSingerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/hybrid/SingerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/hybrid/SpringDatasourceCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/template/JdbcSingerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/template/SingerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/template/SpringJdbcTemplateCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/hybrid/JdbcTemplateConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/template/JdbcTemplateConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/template/TestDbCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/namedparameter/NamedParamCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/namedparameter/NamedTemplateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/namedparameter/SingerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/namedparameter/JdbcNamedTemplateConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/namedparameter/TestDbCfg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +83,7 @@
     "JUnit.DataSourceConfigTest.testBasicDataSource.executor": "Run",
     "JUnit.DataSourceConfigTest.testSimpleDataSource.executor": "Run",
     "JUnit.DataSourceConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor": "Run",
     "JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor": "Run",
@@ -126,7 +122,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcTemplateConfigTest.testSpringJdbc (1)">
+  <component name="RunManager" selected="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc">
     <configuration name="ProfileDemo" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -153,22 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataSourceConfigTest.testSimpleDataSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.six.plain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.plain" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.plain.DataSourceConfigTest" />
-      <option name="METHOD_NAME" value="testSimpleDataSource" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DataSourceConfigTest.testSpringJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter6" />
       <extension name="coverage">
@@ -179,6 +159,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ceva.spring6.six.plain" />
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.plain.DataSourceConfigTest" />
+      <option name="METHOD_NAME" value="testSpringJdbc" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcNamedTemplateConfigTest.testSpringJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.six.namedparameter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.namedparameter" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.namedparameter.JdbcNamedTemplateConfigTest" />
       <option name="METHOD_NAME" value="testSpringJdbc" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -220,18 +216,18 @@
     <list>
       <item itemvalue="Application.ProfileDemo" />
       <item itemvalue="JUnit.DataSourceConfigTest.testBasicDataSource" />
-      <item itemvalue="JUnit.DataSourceConfigTest.testSimpleDataSource" />
       <item itemvalue="JUnit.DataSourceConfigTest.testSpringJdbc" />
+      <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc" />
       <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc" />
       <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc" />
         <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc (1)" />
         <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc" />
         <item itemvalue="JUnit.DataSourceConfigTest.testSpringJdbc" />
         <item itemvalue="JUnit.DataSourceConfigTest.testBasicDataSource" />
-        <item itemvalue="JUnit.DataSourceConfigTest.testSimpleDataSource" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +286,7 @@
       <workItem from="1710358671219" duration="217000" />
       <workItem from="1712081739533" duration="9863000" />
       <workItem from="1712236803184" duration="2189000" />
-      <workItem from="1712244879760" duration="18119000" />
+      <workItem from="1712244879760" duration="21372000" />
     </task>
     <servers />
   </component>
