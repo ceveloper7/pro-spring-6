@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/records/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/records/Singer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/RowMapperDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/SingerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/SingerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/SingerWithAlbumsExtractor_old.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/rowmapper/JdbcNamedTemplateConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/rowmapper/TestDbCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/repo/RepoDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/repo/SelectAllSingers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/repo/SelectSingerByFirstName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/repo/SelectSingerById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/repo/SingerJdbcRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/repo/SingerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/repo/RepoBeanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/QueryConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/QueryConstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +81,7 @@
     "Application.ProfileDemo.executor": "Run",
     "Application.PropertySourceDemo.executor": "Run",
     "Application.Publisher.executor": "Run",
+    "Application.RepoDemo.executor": "Run",
     "Application.ResourceDemo.executor": "Run",
     "Application.SetterInjectionDemo.executor": "Run",
     "Application.springDemo2.Main.executor": "Run",
@@ -93,6 +94,8 @@
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor": "Run",
     "JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor": "Run",
+    "JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery.executor": "Run",
+    "JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -128,13 +131,26 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums">
+  <component name="RunManager" selected="Application.RepoDemo">
     <configuration name="ProfileDemo" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.profile.ProfileDemo" />
       <module name="chapter4" />
       <option name="PROGRAM_PARAMETERS" value="-Dspring.profiles.active=&quot;kindergarten&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.repo.RepoDemo" />
+      <module name="chapter6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.six.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,49 +187,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcNamedTemplateConfigTest.testSpringJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepoBeanTest.testFindAllWithMappingSqlQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.six.namedparameter.*" />
+          <option name="PATTERN" value="com.ceva.spring6.six.repo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.namedparameter" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.namedparameter.JdbcNamedTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testSpringJdbc" />
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.repo" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.repo.RepoBeanTest" />
+      <option name="METHOD_NAME" value="testFindAllWithMappingSqlQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateConfigTest.testSpringJdbc (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepoBeanTest.testFindByNameWithMappingSqlQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.six.template.*" />
+          <option name="PATTERN" value="com.ceva.spring6.six.repo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.template" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.template.JdbcTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testSpringJdbc" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdbcTemplateConfigTest.testSpringJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.six.hybrid.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.hybrid" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.hybrid.JdbcTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testSpringJdbc" />
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.repo" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.repo.RepoBeanTest" />
+      <option name="METHOD_NAME" value="testFindByNameWithMappingSqlQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,19 +221,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
+      <item itemvalue="Application.RepoDemo" />
       <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums" />
+      <item itemvalue="JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery" />
+      <item itemvalue="JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery" />
       <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testFindAll" />
-      <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc" />
-      <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc" />
-      <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RepoDemo" />
+        <item itemvalue="JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery" />
+        <item itemvalue="JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery" />
         <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums" />
         <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testFindAll" />
-        <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc" />
-        <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc (1)" />
-        <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +293,7 @@
       <workItem from="1712081739533" duration="9863000" />
       <workItem from="1712236803184" duration="2189000" />
       <workItem from="1712244879760" duration="27331000" />
-      <workItem from="1712324177366" duration="10021000" />
+      <workItem from="1712324177366" duration="19392000" />
     </task>
     <servers />
   </component>

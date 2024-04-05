@@ -3,6 +3,7 @@ package com.ceva.spring6.six;
 public enum QueryConstants {
     ;
     public static final String FIND_BY_FIRST_NAME = "select singer_id, first_name, last_name, birth_date from singer where first_name = :first_name";
+    public static final String FIND_BY_ID = "select singer_id, first_name, last_name, birth_date from singer where singer_id = :singer_id";
     public static final String NAMED_FIND_NAME = "select CONCAT(first_name , ' ' , last_name) from singer where singer_id = :singerId";
     public static final String PARAMETRIZED_FIND_NAME = "select CONCAT(first_name , ' ' , last_name) from singer where singer_id = ?";
     public static final String FIND_NAME = "select first_name, last_name from singer where singer_id=";
