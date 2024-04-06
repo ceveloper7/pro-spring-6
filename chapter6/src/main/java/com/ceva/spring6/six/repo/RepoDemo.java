@@ -22,5 +22,11 @@ public class RepoDemo {
         LOGGER.info("--------------------------");
         var singerNameById = singerRepo.findNameById(1L);
         LOGGER.info(singerNameById);
+
+        // llamamos al procedimiento almacenado
+        LOGGER.info("--------------------------");
+        var firstName = singerRepo.findFirstNameById(1L).orElse(null);
+        LOGGER.info("Retrieved {} ", firstName); // expect 'Ben'
+        ctx.close();
     }
 }

@@ -16,7 +16,7 @@ public enum QueryConstants {
             "from singer s " +
             "left join album a on s.singer_id = a.singer_id";
 
-    public static final String UPDATE_SINGER = "update singer set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where singer_id=:id";
+    public static final String UPDATE_SINGER = "update singer set first_name=:first_name, last_name=:last_name, birth_date=:birth_date where singer_id=:singer_id";
 
     public static final String INSERT_SINGER = "insert into singer (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)";
 

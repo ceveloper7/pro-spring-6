@@ -43,4 +43,67 @@ public class RepoBeanTest {
 
         ctx.close();
     }
+
+    @Test
+    public void testUpdateWithSqlUpdate() {
+        var ctx = new AnnotationConfigApplicationContext(BasicDataSourceCfg.class, SingerJdbcRepo.class);
+        var singerRepo = ctx.getBean("singerRepo", SingerRepo.class);
+        assertNotNull(singerRepo);
+
+        var singer = new Singer(1L, "John Clayton", "Mayer",
+                LocalDate.of(1977,10, 16),
+                Set.of());
+        singerRepo.update(singer);
+
+        var singers = singerRepo.findByFirstName("John Clayton");
+        assertEquals(1, singers.size());
+        LOGGER.info("Result: {}", singers.get(0));
+
+        ctx.close();
+    }
+
+    @Test
+    public void testInsertWithSqlUpdate() {
+        var ctx = new AnnotationConfigApplicationContext(BasicDataSourceCfg.class, SingerJdbcRepo.class);
+        var singerRepo = ctx.getBean("singerRepo", SingerRepo.class);
+        assertNotNull(singerRepo);
+
+        var singer = new Singer(null,"Ed","Sheeran",
+                LocalDate.of(1991,2, 17),
+                Set.of());
+        singerRepo.insert(singer);
+
+        var singers = singerRepo.findByFirstName("Ed");
+        assertEquals(1, singers.size());
+        LOGGER.info("Result: {}", singers.get(0));
+
+        ctx.close();
+    }
+
+    @Test
+    public void testInsertAlbumsWithBatchSqlUpdate() {
+        var ctx = new AnnotationConfigApplicationContext(BasicDataSourceCfg.class, SingerJdbcRepo.class);
+        var singerRepo = ctx.getBean("singerRepo", SingerRepo.class);
+        assertNotNull(singerRepo);
+
+        var singer = new Singer(null,"BB","King",
+                LocalDate.of(1940,9, 16),
+                new HashSet<>());
+
+        var album = new Album(null, null,"My Kind of Blues", LocalDate.of(1961,8, 18));
+        singer.albums().add(album);
+
+        album = new Album(null, null, "A Heart Full of Blues",
+                LocalDate.of(1962,4, 20)
+        );
+        singer.albums().add(album);
+
+        singerRepo.insertWithAlbum(singer);
+
+        var singers = singerRepo.findAllWithAlbums();
+        assertEquals(3, singers.size());
+        singers.forEach(s -> LOGGER.info(s.toString()));
+
+        ctx.close();
+    }
 }
