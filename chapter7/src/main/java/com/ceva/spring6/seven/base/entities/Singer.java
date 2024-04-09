@@ -23,8 +23,8 @@ import static jakarta.persistence.GenerationType.IDENTITY;
         @NamedQuery(name="Singer.findAllWithAlbum",
                 query="""
       				select distinct s from Singer s 
-					left join fetch s.albums a 
-					left join fetch s.instruments i 
+					join fetch s.albums a 
+					join fetch s.instruments i 
 					""")
 })
 
@@ -89,6 +89,8 @@ public class Singer extends AbstractEntity{
      * La clase Album declara la relacion de MUCHOS A UNO de la relacion con Singer
      * Cada Singer tiene cero o mas album
      * mappedBy indica la propiedad de la clase Album que es la propiedad singer
+     * fetch=FetchType.EAGER -> permite buscar los datos asociados a cada consulta, sin embargo esto
+     * afecta el rendimiento de la recuperacion de datos.
      */
     @OneToMany(mappedBy = "singer", cascade=CascadeType.ALL, orphanRemoval=true)
     public Set<Album> getAlbums() {

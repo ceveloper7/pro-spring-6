@@ -50,7 +50,7 @@ public class HibernateConfig {
         // 2. Injectamos el dataSource
         sessionFactory.setDataSource(dataSource);
         // 3. Indicamos a Hibernate donde buscar los objetos del dominio
-        sessionFactory.setPackagesToScan("com.com.spring6.seven.base.entities");
+        sessionFactory.setPackagesToScan("com.ceva.spring6.seven.base.entities");
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -58,7 +58,8 @@ public class HibernateConfig {
     /**
      * La fabrica de session de Hibernate requiere un administrador de Transacciones
      */
-    @Bean public PlatformTransactionManager transactionManager() {
+    @Bean
+    public PlatformTransactionManager transactionManager() {
         // creamos una instancia del Administrador de Transacciones
         // spring buscara el bean con el nombre transactionManager en el ApplicationContext
         var transactionManager =  new HibernateTransactionManager();
