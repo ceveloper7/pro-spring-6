@@ -91,6 +91,10 @@ public class Singer extends AbstractEntity{
      * mappedBy indica la propiedad de la clase Album que es la propiedad singer
      * fetch=FetchType.EAGER -> permite buscar los datos asociados a cada consulta, sin embargo esto
      * afecta el rendimiento de la recuperacion de datos.
+     * CascadeType.ALL -> cuando se elimina el registro del cantante, se elimina toda su
+     * informacion asociada, incluido albums e instrumentos
+     * orphanRemoval=true -> todos los registros que quedan huerfanos son eliminados, al
+     * eliminar el singer, los datos de Album quedan huerfanos, por ello son eliminados.
      */
     @OneToMany(mappedBy = "singer", cascade=CascadeType.ALL, orphanRemoval=true)
     public Set<Album> getAlbums() {

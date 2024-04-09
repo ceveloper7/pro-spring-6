@@ -54,14 +54,28 @@ public class SingerDaoImpl implements SingerDao{
         return sessionFactory.getCurrentSession().createNamedQuery("Singer.findById", Singer.class).setParameter("id", id).uniqueResult();
     }
 
+    @Transactional
     @Override
     public Singer save(Singer singer) {
-        return null;
+        var session = sessionFactory.getCurrentSession();
+        if (singer.getId() == null) {
+            session.persist(singer);
+        } else {
+            session.merge(singer);
+        }
+        LOGGER.info("Singer saved with id: " + singer.getId());
+        return singer;
     }
 
+    /**
+     * Este metodo va a eliminar un singer con su informacion relacionada como
+     * album e instrumentos
+     */
+    @Transactional
     @Override
     public void delete(Singer singer) {
-
+        sessionFactory.getCurrentSession().remove(singer);
+        LOGGER.info("Singer deleted with id: " + singer.getId());
     }
 
     @Override
