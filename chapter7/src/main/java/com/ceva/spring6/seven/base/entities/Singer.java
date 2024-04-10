@@ -29,8 +29,8 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 })
 
 @NamedStoredProcedureQuery(
-        name = "getFirstNameByIdProc",
-        procedureName = "getFirstNameByIdProc",
+        name = "getFirstNameById",
+        procedureName = "getFirstNameById",
         parameters = {
                 @StoredProcedureParameter(
                         name = "in_id",

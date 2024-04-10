@@ -41,6 +41,51 @@ public class SingerDaoImpl implements SingerDao{
         return sessionFactory.getCurrentSession().createQuery("FROM Singer s", Singer.class).list();
     }
 
+    /**
+     * Escribir consultas HQL complejas suele ser muy dificil por no decir imposible en
+     * Hibernate. Hibernat permite escribir consultas nativas SQL usando el metodo
+     * createNativeQuery().
+     * ALL_SELECT utiliza parametros con nombres.
+     */
+    private static final String ALL_SELECT = """
+            select distinct s.FIRST_NAME, s.LAST_NAME, a.TITLE, a.RELEASE_DATE, i.INSTRUMENT_ID
+            from SINGER s
+            inner join ALBUM a on s.singer_id = a.SINGER_ID
+            inner join SINGER_INSTRUMENT si on s.singer_id = si.SINGER_ID
+            inner join INSTRUMENT i on si.INSTRUMENT_ID = i.INSTRUMENT_ID
+            where s.FIRST_NAME = :firstName and s.LAST_NAME= :lastName
+            """;
+
+    @Transactional
+    @Override
+    public Singer findAllDetails(String firstName, String lastName) {
+        List<Tuple> results = sessionFactory.getCurrentSession()
+                .createNativeQuery(ALL_SELECT, Tuple.class)
+                // proporcionamos los valores para los parametros
+                .setParameter("firstName", firstName)
+                .setParameter("lastName", lastName)
+                .list();
+
+        var singer = new Singer();
+
+        for (Tuple item : results) {
+            if (singer.getFirstName() == null && singer.getLastName() == null) {
+                singer.setFirstName((String) item.get("FIRST_NAME"));
+                singer.setLastName((String) item.get("LAST_NAME"));
+            }
+            var album = new Album();
+            album.setTitle((String) item.get("TITLE"));
+            album.setReleaseDate(((Date) item.get("RELEASE_DATE")).toLocalDate());
+            singer.addAlbum(album);
+
+            var instrument = new Instrument();
+            instrument.setInstrumentId((String) item.get("INSTRUMENT_ID"));
+            singer.getInstruments().add(instrument);
+        }
+
+        return singer;
+    }
+
     @Transactional(readOnly = true)
     @Override
     public List<Singer> findAllWithAlbum() {
@@ -78,23 +123,47 @@ public class SingerDaoImpl implements SingerDao{
         LOGGER.info("Singer deleted with id: " + singer.getId());
     }
 
-    @Override
-    public Singer findAllDetails(String firstName, String lastName) {
-        return null;
-    }
-
+    /**
+     * al consultar tabla no siempre es necesario recuperar un registro completo.
+     * la operacion de consultar solo un subconjunto de columnas se llama proyeccion
+     */
+    @Transactional(readOnly = true)
     @Override
     public Set<String> findAllNamesByProjection() {
-        return null;
+        List<Tuple> projResult = sessionFactory.getCurrentSession()
+                .createQuery("select s.firstName as fn, s.lastName as ln from Singer s", Tuple.class)
+                .getResultList();
+
+        return projResult.stream().map(tuple -> tuple.get("fn", String.class) + " " + tuple.get("ln", String.class))
+                .collect(Collectors.toSet());
     }
 
+    // Llamando a la funcion getFirstNameById
+    @Transactional
     @Override
     public String findFirstNameById(Long id) {
-        return null;
+        final AtomicReference<String> firstNameResult = new AtomicReference<>();
+        sessionFactory.getCurrentSession().doWork(connection -> {
+            try (CallableStatement function = connection.prepareCall(
+                    "{ ? = call getFirstNameById(?) }")) {
+                function.registerOutParameter(1, Types.VARCHAR);
+                function.setLong(2, id);
+                function.execute();
+                firstNameResult.set(function.getString(1));
+            }
+        });
+        return firstNameResult.get();
     }
 
+    @Transactional(readOnly = true)
     @Override
     public String findFirstNameByIdUsingProc(Long id) {
-        return null;
+        ProcedureCall procedureCall =
+                sessionFactory.getCurrentSession()
+                        .createNamedStoredProcedureQuery("getFirstNameById");
+        procedureCall.setParameter("in_id", id);
+        procedureCall.setParameter("fn_res", "");
+        procedureCall.execute();
+        return  procedureCall.getOutputParameterValue("fn_res").toString();
     }
 }

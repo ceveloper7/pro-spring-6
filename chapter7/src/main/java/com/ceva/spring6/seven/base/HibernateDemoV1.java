@@ -11,6 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 public class HibernateDemoV1 {
     private static final Logger LOGGER = LoggerFactory.getLogger(HibernateDemoV1.class);
@@ -88,6 +89,34 @@ public class HibernateDemoV1 {
         singerDao.delete(singer);
     }
 
+    private static void testNativeQuery(SingerDao singerDao){
+        Singer s = singerDao.findAllDetails("John", "Mayer");
+        LOGGER.info(s.toString());
+        if(s.getAlbums() != null){
+            s.getAlbums().forEach(a -> LOGGER.info("\t" + a.toString()));
+        }
+
+        if(s.getInstruments() != null){
+            s.getInstruments().forEach(i -> LOGGER.info("\tInstrument: " + i.getInstrumentId()));
+        }
+
+    }
+
+    private static void testFindAllNameByProjection(SingerDao singerDao){
+        Set<String> names = singerDao.findAllNamesByProjection();
+        names.forEach(n -> LOGGER.info(n));
+    }
+
+    private static void testFindFirstNameByIdUsingFunction(SingerDao singerDao){
+        var name = singerDao.findFirstNameById(1L);
+        LOGGER.info(name);
+    }
+
+    private static void testFindFirstNameByIdUsingProc(SingerDao singerDao){
+        var firstName = singerDao.findFirstNameByIdUsingProc(1L);
+        LOGGER.info(firstName);
+    }
+
     public static void main(String... args) {
         var ctx = new AnnotationConfigApplicationContext(HibernateConfig.class);
         var singerDao = ctx.getBean(SingerDao.class);
@@ -96,8 +125,14 @@ public class HibernateDemoV1 {
         //getSingerById(singerDao);
         //testInsertSinger(singerDao);
         //testUpdate(singerDao);
-        testDelete(singerDao);
-        listSingerWithAlbum(singerDao);
+
+        //testDelete(singerDao);
+        //listSingerWithAlbum(singerDao);
+
+        //testNativeQuery(singerDao);
+        //testFindAllNameByProjection(singerDao);
+        //testFindFirstNameByIdUsingFunction(singerDao);
+        testFindFirstNameByIdUsingProc(singerDao);
 
 
         // this works, but you have to recreate your container to run the other demo class ;)
