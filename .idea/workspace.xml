@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/HibernateDemoV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/dao/SingerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/dao/SingerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/config/BasicDataSourceCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/config/JndiDataSourceCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Instrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/resources/db/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/entities/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter7/src/main/java/com/ceva/spring6/seven/base/entities/Singer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +79,7 @@
     "Application.InitMethodDemo.executor": "Run",
     "Application.InitializingBeanDemo.executor": "Run",
     "Application.InjectSimpleDemo.executor": "Run",
+    "Application.JpaDemo.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MessageSourceDemo.executor": "Run",
     "Application.MethodInjectionDemo.executor": "Run",
@@ -122,23 +133,38 @@
       <recent name="C:\Users\Test\local-projects\IntellijProjects\local-pro-spring6\capitulo3\src\main\java\com\ceva\prospring6\two\decoupled" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ceva.spring6.eight.entities" />
       <recent name="com.ceva.spring6.six" />
       <recent name="com.ceva.spring6.three.field_dependecy_injection" />
       <recent name="com.ceva.prospring6.three.constructor" />
       <recent name="com.ceva.prospring6.three.setter" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ceva.spring6.eight.entities" />
       <recent name="com.ceva.spring6.four.intf" />
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HibernateDemoV1">
+  <component name="RunManager" selected="Application.JpaDemo">
     <configuration name="HibernateDemoV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.seven.base.HibernateDemoV1" />
       <module name="chapter7" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ceva.spring6.seven.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JpaDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.JpaDemo" />
+      <module name="chapter8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.eight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,37 +227,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepoBeanTest.testUpdateWithSqlUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.six.repo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.repo" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.repo.RepoBeanTest" />
-      <option name="METHOD_NAME" value="testUpdateWithSqlUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
+      <item itemvalue="Application.JpaDemo" />
       <item itemvalue="Application.HibernateDemoV1" />
       <item itemvalue="Application.RepoDemo" />
       <item itemvalue="JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate" />
       <item itemvalue="JUnit.RepoBeanTest.testInsertWithSqlUpdate" />
-      <item itemvalue="JUnit.RepoBeanTest.testUpdateWithSqlUpdate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JpaDemo" />
         <item itemvalue="Application.HibernateDemoV1" />
         <item itemvalue="Application.RepoDemo" />
         <item itemvalue="JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate" />
         <item itemvalue="JUnit.RepoBeanTest.testInsertWithSqlUpdate" />
-        <item itemvalue="JUnit.RepoBeanTest.testUpdateWithSqlUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +302,10 @@
       <workItem from="1712236803184" duration="2189000" />
       <workItem from="1712244879760" duration="27331000" />
       <workItem from="1712324177366" duration="29984000" />
-      <workItem from="1712582601885" duration="35115000" />
+      <workItem from="1712582601885" duration="35149000" />
+      <workItem from="1712678534656" duration="23000000" />
+      <workItem from="1712759125741" duration="10000" />
+      <workItem from="1712865767541" duration="17891000" />
     </task>
     <servers />
   </component>
