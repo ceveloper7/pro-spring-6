@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class UntypedResultDemo {
-    private static final Logger LOGGER = LoggerFactory.getLogger(UntypedResultDemo.class);
+public class UntypedAndCustomResultDemo {
+    private static final Logger LOGGER = LoggerFactory.getLogger(UntypedAndCustomResultDemo.class);
     public static void main(String[] args) {
         try(var ctx = new AnnotationConfigApplicationContext(JpaConfig.class)){
             var singerSummaryService = ctx.getBean(SingerSummaryService.class);

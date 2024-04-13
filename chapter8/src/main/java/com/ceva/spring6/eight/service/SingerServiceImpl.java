@@ -61,10 +61,14 @@ public class SingerServiceImpl implements SingerService{
 
     @Override
     public void save(Singer singer) {
+        // antes de guardar verificamos si el objeto es una nueva instancia de entidad
         if (singer.getId() == null) {
+            // no hay un id asignado
             LOGGER.info("Inserting new singer");
+            // persistimos la entidad y se convierte en entidad administrada en el contexto
             em.persist(singer);
         } else {
+            // el id existe,
             em.merge(singer);
             LOGGER.info("Updating existing singer");
         }

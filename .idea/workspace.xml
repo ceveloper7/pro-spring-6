@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/UntypedResultDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerSummaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerSummaryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/view/SingerSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/view/SingerSummaryRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/UntypedAndCustomResultDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/UntypedAndCustomResultDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UntypedResultDemo">
+  <component name="RunManager" selected="Application.JpaDemo">
     <configuration name="HibernateDemoV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.seven.base.HibernateDemoV1" />
       <module name="chapter7" />
@@ -186,8 +184,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UntypedResultDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.UntypedResultDemo" />
+    <configuration name="UntypedAndCustomResultDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.UntypedAndCustomResultDemo" />
       <module name="chapter8" />
       <extension name="coverage">
         <pattern>
@@ -217,7 +215,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
-      <item itemvalue="Application.UntypedResultDemo" />
+      <item itemvalue="Application.UntypedAndCustomResultDemo" />
       <item itemvalue="Application.JpaDemo" />
       <item itemvalue="Application.HibernateDemoV1" />
       <item itemvalue="Application.RepoDemo" />
@@ -225,8 +223,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UntypedResultDemo" />
         <item itemvalue="Application.JpaDemo" />
+        <item itemvalue="Application.UntypedAndCustomResultDemo" />
         <item itemvalue="Application.HibernateDemoV1" />
         <item itemvalue="Application.RepoDemo" />
         <item itemvalue="JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate" />
@@ -294,7 +292,7 @@
       <workItem from="1712678534656" duration="23000000" />
       <workItem from="1712759125741" duration="10000" />
       <workItem from="1712865767541" duration="19712000" />
-      <workItem from="1712970125735" duration="3754000" />
+      <workItem from="1712970125735" duration="10676000" />
     </task>
     <servers />
   </component>

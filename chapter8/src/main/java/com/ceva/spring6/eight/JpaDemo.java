@@ -1,5 +1,6 @@
 package com.ceva.spring6.eight;
 
+import com.ceva.spring6.eight.entities.Album;
 import com.ceva.spring6.eight.entities.Singer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import com.ceva.spring6.eight.config.JpaConfig;
 import com.ceva.spring6.eight.service.SingerService;
 
+import java.time.LocalDate;
 import java.util.Optional;
 
 public class JpaDemo {
@@ -38,6 +40,51 @@ public class JpaDemo {
                     jonhMayer.getAlbums().forEach(album -> LOGGER.info("\t" + album.toString()));
                 }
             }
+/*
+            LOGGER.info(" ---- Inserting new Singer and Album");
+            var cantante = new Singer();
+            cantante.setFirstName("John Wiston");
+            cantante.setLastName("Lennon");
+            cantante.setBirthDate(LocalDate.of(1940, 8, 16));
+
+            var album = new Album();
+            album.setTitle("Album 1");
+            album.setReleaseDate(LocalDate.of(1961, 7, 18));
+            cantante.addAlbum(album);
+
+            album = new Album();
+            album.setTitle("Album 2");
+            album.setReleaseDate(LocalDate.of(1962, 3, 20));
+            cantante.addAlbum(album);
+            singerService.save(cantante);
+
+            var cantantes = singerService.findAllWithAlbum().peek(
+                    c -> {
+                        LOGGER.info(c.toString());
+                        if (c.getAlbums() != null) {
+                            c.getAlbums().forEach(a -> LOGGER.info("\tAlbum:" + a.toString()));
+                        }
+                        if (c.getInstruments() != null) {
+                            c.getInstruments().forEach(i -> LOGGER.info("\tInstrument: " + i.getInstrumentId()));
+                        }
+                    }
+            ).toList();
+*/
+            LOGGER.info(" ---- Updating Singer Information");
+            var singerUpdate = singerService.findById(4L).orElse(null);
+            // recuperamos un album especifico
+            var albumUpdate = singerUpdate.getAlbums().stream()
+                    .filter(a -> a.getTitle().equals("Album 1")).findFirst().orElse(null);
+
+            singerUpdate.setFirstName("Eunice Kathleen");
+            singerUpdate.setLastName("Waymon");
+            singerUpdate.removeAlbum(albumUpdate);
+            int singerVersion = singerUpdate.getVersion();
+
+            singerService.save(singerUpdate);
+
+            var nina = singerService.findById(4L).orElse(null);
+            LOGGER.info(nina.toString());
         }
     }
 }
