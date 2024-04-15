@@ -28,18 +28,21 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 					left join fetch s.instruments i
 					""")
 })
+// Asignacion SQL ResultSet
 @SqlResultSetMapping(
         name="singerResult",
         entities=@EntityResult(entityClass=Singer.class)
 )
+// using stored Function
 @NamedNativeQueries({
         @NamedNativeQuery(
                 name = "Singer.getFirstNameById(?)",
-                query = "select getfirstnamebyid(?)")
+                query = "select getFirstNameById(?)")
 })
+// using stored procedure
 @NamedStoredProcedureQuery(
         name = "getFirstNameByIdProc",
-        procedureName = "getFirstNameByIdProc",
+        procedureName = "getFirstNameById",
         parameters = {
                 @StoredProcedureParameter(
                         name = "in_id",

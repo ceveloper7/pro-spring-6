@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer_.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/UntypedAndCustomResultDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/UntypedAndCustomResultDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,79 +46,79 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.AllInitMethodsDemo.executor": "Run",
-    "Application.AnotherProfileDemo.executor": "Run",
-    "Application.AutowiringDemo.executor": "Run",
-    "Application.AwareDemo.executor": "Run",
-    "Application.BeanNameGerneratorDemo.executor": "Run",
-    "Application.BeanNamingDemo.executor": "Run",
-    "Application.CDLDemo.executor": "Debug",
-    "Application.ConstructorConfusion.executor": "Run",
-    "Application.ConstructorDependencyInjectionDemo.executor": "Run",
-    "Application.CustomPropertyEditorDemo.executor": "Run",
-    "Application.DestroyMethodDemo.executor": "Run",
-    "Application.DisposableBeanDemo.executor": "Run",
-    "Application.FactoryBeanDemo.executor": "Run",
-    "Application.FieldDependencyInjectionDemo.executor": "Run",
-    "Application.HelloWorldDecoupled.executor": "Run",
-    "Application.HibernateDemoV1.executor": "Run",
-    "Application.IC_DependencyPullSample.executor": "Run",
-    "Application.InitMethodDemo.executor": "Run",
-    "Application.InitializingBeanDemo.executor": "Run",
-    "Application.InjectSimpleDemo.executor": "Run",
-    "Application.JpaDemo.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MessageSourceDemo.executor": "Run",
-    "Application.MethodInjectionDemo.executor": "Run",
-    "Application.NonSingletonDemo.executor": "Run",
-    "Application.PlainJdbcDemo.executor": "Run",
-    "Application.PostConstructDemo.executor": "Run",
-    "Application.PreDestroyDemo.executor": "Run",
-    "Application.ProfileDemo.executor": "Run",
-    "Application.PropertySourceDemo.executor": "Run",
-    "Application.Publisher.executor": "Run",
-    "Application.RepoDemo.executor": "Run",
-    "Application.ResourceDemo.executor": "Run",
-    "Application.SetterInjectionDemo.executor": "Run",
-    "Application.UntypedResultDemo.executor": "Run",
-    "Application.springDemo2.Main.executor": "Run",
-    "JUnit.DataSourceConfigTest.testBasicDataSource.executor": "Run",
-    "JUnit.DataSourceConfigTest.testSimpleDataSource.executor": "Run",
-    "JUnit.DataSourceConfigTest.testSpringJdbc.executor": "Run",
-    "JUnit.JdbcNamedTemplateConfigTest.testFindAll.executor": "Run",
-    "JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums.executor": "Run",
-    "JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor": "Run",
-    "JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor": "Run",
-    "JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor": "Run",
-    "JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor": "Run",
-    "JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery.executor": "Run",
-    "JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery.executor": "Run",
-    "JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate.executor": "Run",
-    "JUnit.RepoBeanTest.testInsertWithSqlUpdate.executor": "Run",
-    "JUnit.RepoBeanTest.testUpdateWithSqlUpdate.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Test/test.txt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.248503",
-    "settings.editor.selected.configurable": "preferences.applicationServers",
-    "spring.configuration.checksum": "d0031b7fee67e42fdd410ced8d004f52",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AllInitMethodsDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AnotherProfileDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AutowiringDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AwareDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BeanNameGerneratorDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BeanNamingDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CDLDemo.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ConstructorConfusion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConstructorDependencyInjectionDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CustomPropertyEditorDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DestroyMethodDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DisposableBeanDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FactoryBeanDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FieldDependencyInjectionDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloWorldDecoupled.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HibernateDemoV1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IC_DependencyPullSample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InitMethodDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InitializingBeanDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InjectSimpleDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JpaDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MessageSourceDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodInjectionDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NonSingletonDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PlainJdbcDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PostConstructDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PreDestroyDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProfileDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PropertySourceDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Publisher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RepoDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ResourceDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SetterInjectionDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UntypedResultDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.springDemo2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataSourceConfigTest.testBasicDataSource.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataSourceConfigTest.testSimpleDataSource.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataSourceConfigTest.testSpringJdbc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcNamedTemplateConfigTest.testFindAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepoBeanTest.testInsertWithSqlUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepoBeanTest.testUpdateWithSqlUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Test/test.txt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.248503&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d0031b7fee67e42fdd410ced8d004f52&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Test\local-projects\IntellijProjects\local-pro-spring6\capitulo3\src\main\java\com\ceva\prospring6\two\decoupled" />
@@ -292,7 +294,9 @@
       <workItem from="1712678534656" duration="23000000" />
       <workItem from="1712759125741" duration="10000" />
       <workItem from="1712865767541" duration="19712000" />
-      <workItem from="1712970125735" duration="10676000" />
+      <workItem from="1712970125735" duration="11225000" />
+      <workItem from="1713192017046" duration="90000" />
+      <workItem from="1713192117190" duration="9305000" />
     </task>
     <servers />
   </component>

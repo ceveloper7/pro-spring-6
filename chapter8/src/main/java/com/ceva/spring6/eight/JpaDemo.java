@@ -19,7 +19,7 @@ public class JpaDemo {
             var singerService = ctx.getBean(SingerService.class);
 
             LOGGER.info(" ---- Listing singers:");
-            singerService.findAll().forEach(s -> LOGGER.info(s.toString()));
+            singerService.findAllByNativeQuery().forEach(s -> LOGGER.info(s.toString()));
 
             LOGGER.info(" ---- Listing singers with album and instruments:");
             var singerWithAlbums = singerService.findAllWithAlbum();
@@ -32,7 +32,7 @@ public class JpaDemo {
                     });
 
             LOGGER.info(" ---- Get Singer by Id:");
-            Optional<Singer> singer = singerService.findById(1L);
+            Optional<Singer> singer = singerService.findById(4L);
             if (singer.isPresent()){
                 Singer jonhMayer = singer.get();
                 LOGGER.info(jonhMayer.toString());
@@ -40,6 +40,18 @@ public class JpaDemo {
                     jonhMayer.getAlbums().forEach(album -> LOGGER.info("\t" + album.toString()));
                 }
             }
+
+            LOGGER.info(" ---- Finding Singer by Criteria Query");
+            var singerQuery = singerService.findByCriteriaQuery("John", "Mayer")
+                    .peek(s -> {
+                        LOGGER.info(s.toString());
+                        if(s.getAlbums() != null){
+                            s.getAlbums().forEach(a -> LOGGER.info("\tAlbum:" + a.toString()));
+                        }
+                        if(s.getInstruments() != null){
+                            s.getInstruments().forEach(i -> LOGGER.info("\t" + i.getInstrumentId()));
+                        }
+                    }).toList();
 /*
             LOGGER.info(" ---- Inserting new Singer and Album");
             var cantante = new Singer();
@@ -70,6 +82,7 @@ public class JpaDemo {
                     }
             ).toList();
 */
+/*
             LOGGER.info(" ---- Updating Singer Information");
             var singerUpdate = singerService.findById(4L).orElse(null);
             // recuperamos un album especifico
@@ -85,6 +98,12 @@ public class JpaDemo {
 
             var nina = singerService.findById(4L).orElse(null);
             LOGGER.info(nina.toString());
+ */
+ /*
+            LOGGER.info(" ---- Delete Singer Information - ID 4L");
+            var singerDel = singerService.findById(4L).orElse(null);
+            singerService.delete(singerDel);
+  */
         }
     }
 }

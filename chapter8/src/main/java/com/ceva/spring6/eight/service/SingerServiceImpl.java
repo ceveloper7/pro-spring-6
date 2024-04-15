@@ -1,6 +1,9 @@
 package com.ceva.spring6.eight.service;
 
+import com.ceva.spring6.eight.entities.Singer_;
 import jakarta.persistence.*;
+import jakarta.persistence.criteria.*;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
@@ -77,23 +80,32 @@ public class SingerServiceImpl implements SingerService{
     @Override
     public void delete(Singer singer) {
         var mergedContact = em.merge(singer);
+        // eliminamos el registro con toda su informacion asociada incluido Album, Instrument
+        // ya que se especifico cascade=CascadeType.ALL
         em.remove(mergedContact);
 
         LOGGER.info("Singer with id: " + singer.getId()  + " deleted successfully");
     }
 
+    // Consulta nativa Simple y SQL ResultSet
     @SuppressWarnings({"unchecked"})
     @Override
     public Stream<Singer> findAllByNativeQuery() {
+        //return em.createNativeQuery(ALL_SINGER_NATIVE_QUERY).getResultList().stream();
+
+        // JPA transforma el resultSet en instancias de la entidad Singer
+        // la ejecucion del metodo produce el mismo resultado que el metodo FindAll()
         return em.createNativeQuery(ALL_SINGER_NATIVE_QUERY, "singerResult").getResultList().stream();
     }
 
+    // ejecutando Stored function
     @Override
     public String findFirstNameById(Long id) {
         return em.createNamedQuery("Singer.getFirstNameById(?)")
                 .setParameter(1, id).getSingleResult().toString();
     }
 
+    // ejecutando Stored Procedure
     @Override
     public String findFirstNameByIdUsingProc(Long id) {
         StoredProcedureQuery query = em.createNamedStoredProcedureQuery("getFirstNameByIdProc");
@@ -102,4 +114,28 @@ public class SingerServiceImpl implements SingerService{
         query.execute();
         return (String) query.getOutputParameterValue( "fn_res" );
     }
+
+    @Override
+    public Stream<Singer> findByCriteriaQuery(String firstName, String lastName){
+        LOGGER.info("Finding singer for firstName: " + firstName + " and lastName: " + lastName);
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<Singer> criteriaQuery = cb.createQuery(Singer.class);
+        Root<Singer> singerRoot = criteriaQuery.from(Singer.class);
+        singerRoot.fetch(Singer_.albums, JoinType.LEFT);
+        singerRoot.fetch(Singer_.instruments, JoinType.LEFT);
+        criteriaQuery.select(singerRoot).distinct(true);
+
+        Predicate criteria = cb.conjunction();
+        if (StringUtils.isNotBlank(firstName)) {
+            Predicate firstNamePredicate = cb.equal(singerRoot.get(Singer_.firstName), firstName);
+            criteria = cb.and(criteria, firstNamePredicate);
+        }
+        if (StringUtils.isNotBlank(lastName)) {
+            Predicate lastNamePredicate = cb.equal(singerRoot.get(Singer_.lastName), lastName);
+            criteria = cb.and(criteria, lastNamePredicate);
+        }
+        criteriaQuery.where(criteria);
+        return em.createQuery(criteriaQuery).getResultList().stream();
+    }
+
 }
