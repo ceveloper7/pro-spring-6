@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer_.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/JpaDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/entities/Singer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter8/src/main/java/com/ceva/spring6/eight/service/SingerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +291,8 @@
       <workItem from="1712865767541" duration="19712000" />
       <workItem from="1712970125735" duration="11225000" />
       <workItem from="1713192017046" duration="90000" />
-      <workItem from="1713192117190" duration="9305000" />
+      <workItem from="1713192117190" duration="9931000" />
+      <workItem from="1713842250436" duration="41000" />
     </task>
     <servers />
   </component>
