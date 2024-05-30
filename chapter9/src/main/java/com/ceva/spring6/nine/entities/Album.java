@@ -1,12 +1,16 @@
 package com.ceva.spring6.nine.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.NamedQueries;
+import jakarta.persistence.NamedQuery;
+import jakarta.persistence.Table;
 
 import java.io.Serial;
 import java.time.LocalDate;
 import java.util.Objects;
-
-import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table(name = "album")
@@ -19,28 +23,14 @@ public class Album extends AbstractEntity{
 
     public static final String FIND_ALL = "Album.findAll";
 
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "album_id")
-    private Long id;
-
     @Column
     private String title;
-
-    @Column(name = "release_date")
+    @Column(name = "RELEASE_DATE")
     private LocalDate releaseDate;
 
     @ManyToOne
-    @JoinColumn(name = "singer_id")
+    @JoinColumn(name = "SINGER_ID")
     private Singer singer;
-
-    public Long getId() {
-        return this.id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Singer getSinger() {
         return this.singer;

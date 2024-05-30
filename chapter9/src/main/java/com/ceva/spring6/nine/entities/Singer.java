@@ -1,6 +1,15 @@
 package com.ceva.spring6.nine.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.NamedQueries;
+import jakarta.persistence.NamedQuery;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 import java.io.Serial;
 import java.time.LocalDate;
@@ -8,10 +17,8 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import static jakarta.persistence.GenerationType.IDENTITY;
-
 @Entity
-@Table(name = "SINGER")
+@Table(name = "singer")
 @NamedQueries({
         @NamedQuery(name=Singer.FIND_ALL, query="select s from Singer s"),
         @NamedQuery(name=Singer.COUNT_ALL, query="select count(s) from Singer s"),
@@ -25,34 +32,21 @@ public class Singer extends AbstractEntity{
     public static final String COUNT_ALL = "Singer.countAll";
     public static final String FIND_BY_FIRST_AND_LAST_NAME = "Singer.findByFirstAndLastName";
 
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "singer_id")
-    private Long id;
-
-    @Column(name = "first_name")
+    @Column(name = "FIRST_NAME")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "LAST_NAME")
     private String lastName;
-    @Column(name = "birth_date")
+    @Column(name = "BIRTH_DATE")
     private LocalDate birthDate;
     @OneToMany(mappedBy = "singer")
     private Set<Album> albums = new HashSet<>();
 
     @ManyToMany
-    @JoinTable(name = "singer_instrument",
-            joinColumns = @JoinColumn(name = "singer_id"),
-            inverseJoinColumns = @JoinColumn(name = "instrument_id"))
+    @JoinTable(name = "SINGER_INSTRUMENT",
+            joinColumns = @JoinColumn(name = "SINGER_ID"),
+            inverseJoinColumns = @JoinColumn(name = "INSTRUMENT_ID"))
     private Set<Instrument> instruments = new HashSet<>();
-
-    public Long getId() {
-        return this.id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return this.firstName;
