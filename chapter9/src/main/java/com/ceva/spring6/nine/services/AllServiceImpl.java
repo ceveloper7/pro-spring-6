@@ -41,6 +41,7 @@ public class AllServiceImpl implements AllService{
         return singerOpt;
     }
 
+    // la anotacion transactional a nivel clase anula y se crea y utiliza una nueva transaccion para hacer la operacion de actualizacion
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     @Override
     public void update(Singer singer) {

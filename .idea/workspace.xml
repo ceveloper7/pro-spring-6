@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/AllServiceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/config/TransactionCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/ex/TitleTooLongException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/repos/AlbumRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/repos/AlbumRepoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/repos/SingerRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/repos/SingerRepoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/services/AllService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/services/AllServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/entities/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/entities/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/entities/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/entities/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/entities/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/entities/Singer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9/src/main/resources/db/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/resources/db/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/AllServiceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/AllServiceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/services/AllServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/java/com/ceva/spring6/nine/services/AllServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter9/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,6 +303,8 @@
       <workItem from="1716995577196" duration="6775000" />
       <workItem from="1717009040155" duration="11335000" />
       <workItem from="1717035415378" duration="2160000" />
+      <workItem from="1717038787440" duration="50000" />
+      <workItem from="1717099913712" duration="5580000" />
     </task>
     <servers />
   </component>
