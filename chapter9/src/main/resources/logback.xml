@@ -12,11 +12,11 @@
         </encoder>
     </appender>
 
-    <logger name="com.ceva.spring6.nine" level="debug"/>
+    <logger name="com.ceva.spring6.nine" level="info"/>
 
     <logger name="org.springframework" level="info"/>
 
-    <logger name="org.hibernate.engine" level="debug"/>
+    <logger name="org.hibernate.engine" level="info"/>
 
     <root level="info">
         <appender-ref ref="console" />

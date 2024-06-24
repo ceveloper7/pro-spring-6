@@ -2,6 +2,9 @@ package com.ceva.spring6.nine.ex;
 
 import java.io.Serial;
 
+/**
+ *
+ */
 public class TitleTooLongException extends Exception {
     @Serial
     private static final long serialVersionUID = 42L;

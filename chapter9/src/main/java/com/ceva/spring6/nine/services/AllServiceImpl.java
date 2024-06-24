@@ -48,6 +48,7 @@ public class AllServiceImpl implements AllService{
         singerRepo.save(singer);
     }
 
+    // envolvemos el metodo save() en una transaccion
     @Transactional(rollbackFor = TitleTooLongException.class)
     @Override
     public void saveSingerWithAlbums(Singer s, Set<Album> albums) throws TitleTooLongException {

@@ -17,8 +17,10 @@ public class AlbumRepoImpl implements AlbumRepo{
     @PersistenceContext
     private EntityManager em;
 
+    // jpaProperties declarado en TransacctionCfg
     @Value("#{jpaProperties.get('hibernate.jdbc.batch_size')}")
     private int batchSize;
+
     @Override
     public Stream<Album> findBySinger(Singer singer) {
         return  em.createNamedQuery(Album.FIND_ALL, Album.class)
@@ -26,11 +28,15 @@ public class AlbumRepoImpl implements AlbumRepo{
                 .getResultList().stream();
     }
 
+    // version de save() que hace escritura por lotes.
     @Override
     public Set<Album> save(Set<Album> albums) throws TitleTooLongException {
         final Set<Album> savedAlbums = new HashSet<>();
         int i = 0;
         for (Album a : albums) {
+            if(50 < a.getTitle().length()) {
+                throw  new TitleTooLongException("Title "+ a.getTitle() + "too long!");
+            }
             savedAlbums.add(save(a));
             i++;
             if (i % batchSize == 0) {
@@ -44,6 +50,7 @@ public class AlbumRepoImpl implements AlbumRepo{
 
     @Override
     public Album save(Album album) throws TitleTooLongException {
+        // si el titulo del album es superior a 50 caracteres lanzamos una excepcion.
         if (50 < album.getTitle().length()) {
             throw  new TitleTooLongException("Title "+ album.getTitle() + "too long!");
         }
