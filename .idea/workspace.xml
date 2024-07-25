@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter10/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/AllServiceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/config/BasicDataSourceCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/config/DataJpaCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/Instrument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/Singer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/resources/db/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/AlbumServiceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/AuditableEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/SingerAudit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/AlbumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerAuditRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/envers/CustomSingerAuditRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/AlbumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/AlbumServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerAuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerAuditServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/AllServiceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/SingerServiceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +30,8 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="Record" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,6 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AlbumServiceDemo.executor": "Run",
     "Application.AllInitMethodsDemo.executor": "Run",
     "Application.AllServiceDemo.executor": "Run",
     "Application.AnotherProfileDemo.executor": "Run",
@@ -97,6 +95,7 @@
     "Application.RepoDemo.executor": "Run",
     "Application.ResourceDemo.executor": "Run",
     "Application.SetterInjectionDemo.executor": "Run",
+    "Application.SingerServiceDemo.executor": "Run",
     "Application.UntypedResultDemo.executor": "Run",
     "Application.com.ceva.spring6.ten.AllServiceDemo.executor": "Run",
     "Application.springDemo2.Main.executor": "Run",
@@ -154,13 +153,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.ceva.spring6.ten.AllServiceDemo">
-    <configuration name="AllServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.nine.AllServiceDemo" />
-      <module name="chapter9" />
+  <component name="RunManager" selected="Application.SingerServiceDemo">
+    <configuration name="AlbumServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.ten.AlbumServiceDemo" />
+      <module name="chapter10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.nine.*" />
+          <option name="PATTERN" value="com.ceva.spring6.ten.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HibernateDemoV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.seven.base.HibernateDemoV1" />
-      <module name="chapter7" />
+    <configuration name="AllServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.nine.AllServiceDemo" />
+      <module name="chapter9" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.seven.base.*" />
+          <option name="PATTERN" value="com.ceva.spring6.nine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -204,12 +203,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UntypedAndCustomResultDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.UntypedAndCustomResultDemo" />
-      <module name="chapter8" />
+    <configuration name="SingerServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.ten.SingerServiceDemo" />
+      <module name="chapter10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.eight.*" />
+          <option name="PATTERN" value="com.ceva.spring6.ten.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -217,12 +216,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ceva.spring6.ten.AllServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.ten.AllServiceDemo" />
-      <module name="chapter10" />
+    <configuration name="UntypedAndCustomResultDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.UntypedAndCustomResultDemo" />
+      <module name="chapter8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.ten.*" />
+          <option name="PATTERN" value="com.ceva.spring6.eight.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,19 +244,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
-      <item itemvalue="Application.com.ceva.spring6.ten.AllServiceDemo" />
+      <item itemvalue="Application.AlbumServiceDemo" />
+      <item itemvalue="Application.SingerServiceDemo" />
       <item itemvalue="Application.AllServiceDemo" />
       <item itemvalue="Application.UntypedAndCustomResultDemo" />
       <item itemvalue="Application.JpaDemo" />
-      <item itemvalue="Application.HibernateDemoV1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.ceva.spring6.ten.AllServiceDemo" />
+        <item itemvalue="Application.SingerServiceDemo" />
+        <item itemvalue="Application.AlbumServiceDemo" />
         <item itemvalue="Application.AllServiceDemo" />
         <item itemvalue="Application.JpaDemo" />
         <item itemvalue="Application.UntypedAndCustomResultDemo" />
-        <item itemvalue="Application.HibernateDemoV1" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +334,8 @@
       <workItem from="1717099913712" duration="5580000" />
       <workItem from="1717114772957" duration="26000" />
       <workItem from="1719237804246" duration="18145000" />
-      <workItem from="1721744844368" duration="16659000" />
+      <workItem from="1721744844368" duration="17355000" />
+      <workItem from="1721914172844" duration="11532000" />
     </task>
     <servers />
   </component>

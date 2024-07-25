@@ -15,6 +15,7 @@ public interface SingerRepository extends CrudRepository<Singer, Long> {
     Iterable<Singer> findByFirstName(String firstName);
     Iterable<Singer> findByFirstNameAndLastName(String firstName, String lastName);
 
+    // anotacion que permite a la consulta modificar datos. @Modifying solo se debe usar junto a @Query
     @Modifying(clearAutomatically = true)
     @Query("update Singer s set s.firstName = ?1 where s.id = ?2")
     int setFirstNameFor(String firstName, Long id);

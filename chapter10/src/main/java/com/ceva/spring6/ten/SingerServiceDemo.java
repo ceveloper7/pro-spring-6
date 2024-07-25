@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class AllServiceDemo {
-    private static final Logger LOGGER = LoggerFactory.getLogger(AllServiceDemo.class);
+public class SingerServiceDemo {
+    private static final Logger LOGGER = LoggerFactory.getLogger(SingerServiceDemo.class);
     @Autowired
     SingerService singerService;
 
@@ -33,13 +33,19 @@ public class AllServiceDemo {
                 }).toList();
     }
 
+    private void testUpdateFirstNameByQuery(SingerService service){
+        var nina = service.updateFirstName("John Alexander", 1L);
+        LOGGER.info(nina.toString());
+    }
+
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(DataJpaCfg.class);
         var service = ctx.getBean(SingerService.class);
 
-        AllServiceDemo serviceDemo = new AllServiceDemo();
+        SingerServiceDemo serviceDemo = new SingerServiceDemo();
 
-        serviceDemo.testFIndByFirstNameAndLastName(service);
+        serviceDemo.testUpdateFirstNameByQuery(service);
+        //serviceDemo.testFIndByFirstNameAndLastName(service);
         //serviceDemo.testFindByFirstName(service);
         //serviceDemo.testFindAllSingers(service);
     }
