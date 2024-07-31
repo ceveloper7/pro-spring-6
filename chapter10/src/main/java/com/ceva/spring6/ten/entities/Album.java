@@ -22,11 +22,11 @@ public class Album extends AbstractEntity{
 
     @Column
     private String title;
-    @Column(name = "RELEASE_DATE")
+    @Column(name = "release_date")
     private LocalDate releaseDate;
 
     @ManyToOne
-    @JoinColumn(name = "SINGER_ID")
+    @JoinColumn(name = "singer_id")
     private Singer singer;
 
     public Singer getSinger() {

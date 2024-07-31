@@ -14,11 +14,11 @@ public abstract class AbstractEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "ID")
+    @Column(name = "id")
     protected Long id;
 
     @Version
-    @Column(name = "VERSION")
+    @Column(name = "version")
     protected int version;
 
     public Long getId() {

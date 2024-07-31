@@ -2,6 +2,9 @@ package com.ceva.spring6.ten.services;
 
 import com.ceva.spring6.ten.entities.SingerAudit;
 import com.ceva.spring6.ten.repos.SingerAuditRepository;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import org.hibernate.envers.AuditReaderFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,6 +15,10 @@ import java.util.stream.StreamSupport;
 @Transactional
 public class SingerAuditServiceImpl implements SingerAuditService {
     private final SingerAuditRepository singerAuditRepository;
+
+    //@PersistenceContext
+    //private EntityManager entityManager;
+
     public SingerAuditServiceImpl(SingerAuditRepository singerAuditRepository) {
         this.singerAuditRepository = singerAuditRepository;
     }

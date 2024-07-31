@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/AlbumServiceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/AuditableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/SingerAudit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/AlbumRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerAuditRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/envers/CustomSingerAuditRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/AlbumService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/AlbumServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerAuditService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerAuditServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/AuditServiceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/EnversServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/config/EnversConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/envers/CustomSingerAuditRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/AllServiceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/SingerServiceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/repos/SingerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/entities/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerAuditServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter10/src/main/java/com/ceva/spring6/ten/services/SingerAuditServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +25,8 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +58,7 @@
     "Application.AllInitMethodsDemo.executor": "Run",
     "Application.AllServiceDemo.executor": "Run",
     "Application.AnotherProfileDemo.executor": "Run",
+    "Application.AuditServiceDemo.executor": "Run",
     "Application.AutowiringDemo.executor": "Run",
     "Application.AwareDemo.executor": "Run",
     "Application.BeanNameGerneratorDemo.executor": "Run",
@@ -73,6 +69,7 @@
     "Application.CustomPropertyEditorDemo.executor": "Run",
     "Application.DestroyMethodDemo.executor": "Run",
     "Application.DisposableBeanDemo.executor": "Run",
+    "Application.EnversServiceTest.executor": "Run",
     "Application.FactoryBeanDemo.executor": "Run",
     "Application.FieldDependencyInjectionDemo.executor": "Run",
     "Application.HelloWorldDecoupled.executor": "Run",
@@ -153,7 +150,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SingerServiceDemo">
+  <component name="RunManager" selected="Application.EnversServiceTest">
     <configuration name="AlbumServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.ten.AlbumServiceDemo" />
       <module name="chapter10" />
@@ -180,12 +177,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JpaDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.JpaDemo" />
-      <module name="chapter8" />
+    <configuration name="AuditServiceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.ten.AuditServiceDemo" />
+      <module name="chapter10" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.eight.*" />
+          <option name="PATTERN" value="com.ceva.spring6.ten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnversServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.ten.EnversServiceTest" />
+      <module name="chapter10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.ten.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,19 +226,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UntypedAndCustomResultDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.eight.UntypedAndCustomResultDemo" />
-      <module name="chapter8" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.eight.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="chapter4" />
       <method v="2">
@@ -244,19 +241,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
+      <item itemvalue="Application.AuditServiceDemo" />
+      <item itemvalue="Application.EnversServiceTest" />
       <item itemvalue="Application.AlbumServiceDemo" />
       <item itemvalue="Application.SingerServiceDemo" />
       <item itemvalue="Application.AllServiceDemo" />
-      <item itemvalue="Application.UntypedAndCustomResultDemo" />
-      <item itemvalue="Application.JpaDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EnversServiceTest" />
+        <item itemvalue="Application.AuditServiceDemo" />
         <item itemvalue="Application.SingerServiceDemo" />
         <item itemvalue="Application.AlbumServiceDemo" />
         <item itemvalue="Application.AllServiceDemo" />
-        <item itemvalue="Application.JpaDemo" />
-        <item itemvalue="Application.UntypedAndCustomResultDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +332,8 @@
       <workItem from="1717114772957" duration="26000" />
       <workItem from="1719237804246" duration="18145000" />
       <workItem from="1721744844368" duration="17355000" />
-      <workItem from="1721914172844" duration="11532000" />
+      <workItem from="1721914172844" duration="12407000" />
+      <workItem from="1722432072502" duration="13773000" />
     </task>
     <servers />
   </component>
@@ -344,6 +342,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
