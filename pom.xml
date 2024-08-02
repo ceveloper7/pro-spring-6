@@ -19,6 +19,7 @@
         <module>chapter8</module>
         <module>chapter9</module>
         <module>chapter10</module>
+        <module>chapter11</module>
     </modules>
 
     <properties>
@@ -46,6 +47,7 @@
         <mariadb.client.version>3.0.7</mariadb.client.version>
         <hikari.version>5.0.1</hikari.version>
         <hibernate.version>6.1.1.Final</hibernate.version>
+        <hibernate.validator.version>8.0.1.Final</hibernate.validator.version>
         <querydsl.version>5.0.0</querydsl.version>
 
         <!-- others -->
