@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ConstructorDependencyInjectionDemo {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(CDIHelloWorldConfiguration.class);
-        CDIMessageRenderer renderer = ctx.getBean("renderer", CDIMessageRenderer.class);
-        renderer.render();
+        CDIMessageRenderer renderBean = ctx.getBean("render", CDIMessageRenderer.class);
+        renderBean.render();
     }
 }

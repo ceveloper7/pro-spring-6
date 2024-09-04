@@ -17,8 +17,8 @@ public class HelloWorldConfiguration {
         return new HelloWorldMProvider();
     }
 
-    @Bean
-    public MRender renderer(){
+    @Bean(name = "renderizador")
+    public MRender render(){
         MRender render = new StandardOutMessageRender();
         render.setMessageProvider(provider());
         return render;

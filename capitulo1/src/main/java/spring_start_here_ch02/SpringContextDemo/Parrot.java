@@ -1,4 +1,4 @@
-package SpringStartHereCh02_SpringContextDemo;
+package spring_start_here_ch02.SpringContextDemo;
 
 public class Parrot {
     private String name;

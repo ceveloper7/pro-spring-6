@@ -5,6 +5,6 @@ public class HelloWorldDecoupled {
         MProvider messageProvider = new HelloWorldMProvider();
         MRender messageRender = new StandardOutMessageRender();
         messageRender.setMessageProvider(messageProvider);
-        messageRender.render();
+        messageRender.printMessage();
     }
 }

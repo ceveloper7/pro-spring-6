@@ -7,7 +7,7 @@ public class StandardOutMessageRender implements MRender{
         System.out.println("--> StandardOutMessageRender: constructor called");
     }
     @Override
-    public void render() {
+    public void printMessage() {
         if(messageProvider == null){
             throw new RuntimeException("You must set the messageprovider property up");
         }

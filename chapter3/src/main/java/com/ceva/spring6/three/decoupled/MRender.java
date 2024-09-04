@@ -1,7 +1,7 @@
 package com.ceva.spring6.three.decoupled;
 
 public interface MRender {
-    void render();
+    void printMessage();
     void setMessageProvider(MProvider messageProvider);
     MProvider getMessageProvider();
 }

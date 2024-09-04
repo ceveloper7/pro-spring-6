@@ -12,7 +12,7 @@ public class IC_DependencyPullSample {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
         // extraemos la instancia de la clase (StandardOutMessageRender)
         // que implementa el bean MRender
-        MRender mrender = ctx.getBean("renderer", MRender.class);
-        mrender.render();
+        var renderizador = ctx.getBean("renderizador", MRender.class);
+        renderizador.printMessage();
     }
 }

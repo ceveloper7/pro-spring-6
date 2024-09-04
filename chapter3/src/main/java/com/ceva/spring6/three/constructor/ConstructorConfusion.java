@@ -13,7 +13,11 @@ public class ConstructorConfusion {
         this.someValue = someValue;
     }
 
-    @Autowired // this is what makes this work
+    /*
+     * Aunque la clase posee mas de un constructor, al decorar este constructor con @Autowired se le dice a Spring que use este
+     * constructor para crear una instancia de este bean, sin esta anotacion Spring no tiene forma que constructor utilizar.
+     */
+    @Autowired
     public ConstructorConfusion(@Value("90") int someValue) {
         System.out.println("ConstructorConfusion(int) called");
         this.someValue = "Number: " + Integer.toString(someValue);
@@ -23,8 +27,11 @@ public class ConstructorConfusion {
     }
 
     public static void main(String... args) {
+        // creamos una instancia del contexto de aplicacion de spring
         var ctx = new AnnotationConfigApplicationContext();
+        // registramos la definicion del bean
         ctx.register(ConstructorConfusion.class);
+        // se recrean todos los beans deacuerdo a las definiciones registradas.
         ctx.refresh();
 
         var cc = ctx.getBean(ConstructorConfusion.class);
