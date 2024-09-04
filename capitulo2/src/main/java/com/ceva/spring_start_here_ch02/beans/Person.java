@@ -6,9 +6,10 @@ import org.springframework.stereotype.Component;
 /*
  * @Component le dice a spring que cree una sola instancia de esta clase en el spring context
  */
-@Component
+
 public class Person {
     private String name;
+    private Parrot parrot;
 
     // inicializamos el bean Person con un nombre por defecto
     @PostConstruct
@@ -26,6 +27,13 @@ public class Person {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Parrot getParrot() {
+        return parrot;
+    }
+    public void setParrot(Parrot parrot) {
+        this.parrot = parrot;
     }
 
     @Override
