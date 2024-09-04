@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/spring_start_here_ch02/SpringContextDemo/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo1/src/main/java/spring_start_here_ch02/SpringContextDemo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/spring_start_here_ch02/beans/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/spring_start_here_ch02/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/capitulo2/src/main/java/com/ceva/spring_start_here_ch02/services/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo1/src/main/java/SpringStartHereCh02_SpringContextDemo/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo1/src/main/java/SpringStartHereCh02_SpringContextDemo/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo1/src/main/java/SpringStartHereCh02_SpringContextDemo/Parrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo1/src/main/java/spring_start_here_ch02/SpringContextDemo/Parrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capitulo2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/capitulo2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/HelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/HelloWorldConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/IC_DependencyPullSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/annotated/IC_DependencyPullSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor/ConstructorConfusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor/ConstructorConfusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor_dependency_injection/ConstructorDependencyInjectionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor_dependency_injection/ConstructorDependencyInjectionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor_dependency_injection/StandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/constructor_dependency_injection/StandardOutMessageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/decoupled/HelloWorldDecoupled.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/decoupled/HelloWorldDecoupled.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/decoupled/MRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/decoupled/MRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/decoupled/StandardOutMessageRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/decoupled/StandardOutMessageRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIHelloWorldConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIHelloWorldConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIStandardOutMessageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SIStandardOutMessageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SetterInjectionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/setter_dependency_injection/SetterInjectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/configurable/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/configurable/ConfigurableMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/configurable/ConfigurableMessageProviderDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/configurable/MessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/configurable/MessageRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/configurable/StandardOutMessagerRender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +22,8 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -77,6 +62,7 @@
     "Application.BeanNameGerneratorDemo.executor": "Run",
     "Application.BeanNamingDemo.executor": "Run",
     "Application.CDLDemo.executor": "Debug",
+    "Application.ConfigurableMessageProviderDemo.executor": "Run",
     "Application.ConstructorConfusion.executor": "Run",
     "Application.ConstructorDependencyInjectionDemo.executor": "Run",
     "Application.CoverterPropertiesTest.executor": "Run",
@@ -168,7 +154,20 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructorConfusion">
+  <component name="RunManager" selected="Application.ConfigurableMessageProviderDemo">
+    <configuration name="ConfigurableMessageProviderDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.configurable.ConfigurableMessageProviderDemo" />
+      <module name="chapter3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.three.configurable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConstructorConfusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.constructor.ConstructorConfusion" />
       <module name="chapter3" />
@@ -201,19 +200,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ceva.spring6.three.decoupled.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IC_DependencyPullSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.annotated.IC_DependencyPullSample" />
-      <module name="chapter3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.annotated.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -259,19 +245,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
+      <item itemvalue="Application.ConfigurableMessageProviderDemo" />
       <item itemvalue="Application.ConstructorConfusion" />
       <item itemvalue="Application.ConstructorDependencyInjectionDemo" />
       <item itemvalue="Application.HelloWorldDecoupled" />
-      <item itemvalue="Application.IC_DependencyPullSample" />
       <item itemvalue="Application.SetterInjectionDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfigurableMessageProviderDemo" />
         <item itemvalue="Application.ConstructorConfusion" />
         <item itemvalue="Application.SetterInjectionDemo" />
         <item itemvalue="Application.HelloWorldDecoupled" />
         <item itemvalue="Application.ConstructorDependencyInjectionDemo" />
-        <item itemvalue="Application.IC_DependencyPullSample" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +340,7 @@
       <workItem from="1722432072502" duration="15053000" />
       <workItem from="1722523812896" duration="13335000" />
       <workItem from="1725284897500" duration="13684000" />
-      <workItem from="1725366551451" duration="19517000" />
+      <workItem from="1725366551451" duration="23114000" />
     </task>
     <servers />
   </component>
