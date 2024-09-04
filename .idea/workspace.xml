@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/construct_wiring/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/construct_wiring/Parrot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/construct_wiring/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/field_autowiring/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/field_autowiring/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/field_autowiring/Parrot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/start_here/field_autowiring/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_injection/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_injection/Inspiration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_injection/Singer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/field_injection/SingerFieldInjectionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/InjectParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/InjectParamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/spel/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/spel/InjectSimpleParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/spel/InjectSimpleParamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/spel/InjectSimpleSpel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/validinject/InjectSimpleDemo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +85,9 @@
     "Application.IC_DependencyPullSample.executor": "Run",
     "Application.InitMethodDemo.executor": "Run",
     "Application.InitializingBeanDemo.executor": "Run",
+    "Application.InjectParamDemo.executor": "Run",
     "Application.InjectSimpleDemo.executor": "Run",
+    "Application.InjectSimpleParamDemo.executor": "Run",
     "Application.JpaDemo.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MessageSourceDemo.executor": "Run",
@@ -94,6 +102,7 @@
     "Application.RepoDemo.executor": "Run",
     "Application.ResourceDemo.executor": "Run",
     "Application.SetterInjectionDemo.executor": "Run",
+    "Application.SingerFieldInjectionDemo.executor": "Run",
     "Application.SingerServiceDemo.executor": "Run",
     "Application.UntypedResultDemo.executor": "Run",
     "Application.com.ceva.spring6.start_here.field_autowiring.Main.executor": "Run",
@@ -156,13 +165,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.ceva.spring6.start_here.field_autowiring.Main">
-    <configuration name="ConfigurableMessageProviderDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.configurable.ConfigurableMessageProviderDemo" />
+  <component name="RunManager" selected="Application.InjectSimpleParamDemo">
+    <configuration name="FieldDependencyInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.field_dependecy_injection.FieldDependencyInjectionDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.configurable.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.field_dependecy_injection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConstructorConfusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.constructor.ConstructorConfusion" />
+    <configuration name="InjectParamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.validinject.InjectParamDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.constructor.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.validinject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring_start_here_ch02.services.Main" />
-      <module name="capitulo2" />
+    <configuration name="InjectSimpleParamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.validinject.spel.InjectSimpleParamDemo" />
+      <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring_start_here_ch02.services.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.validinject.spel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,12 +215,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetterInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.setter_dependency_injection.SetterInjectionDemo" />
+    <configuration name="SingerFieldInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.field_injection.SingerFieldInjectionDemo" />
       <module name="chapter3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.setter_dependency_injection.*" />
+          <option name="PATTERN" value="com.ceva.spring6.three.field_injection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -247,19 +256,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.FieldDependencyInjectionDemo" />
+      <item itemvalue="Application.InjectParamDemo" />
+      <item itemvalue="Application.InjectSimpleParamDemo" />
+      <item itemvalue="Application.SingerFieldInjectionDemo" />
       <item itemvalue="Application.com.ceva.spring6.start_here.field_autowiring.Main" />
-      <item itemvalue="Application.ConfigurableMessageProviderDemo" />
-      <item itemvalue="Application.ConstructorConfusion" />
-      <item itemvalue="Application.SetterInjectionDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InjectSimpleParamDemo" />
+        <item itemvalue="Application.InjectParamDemo" />
+        <item itemvalue="Application.SingerFieldInjectionDemo" />
+        <item itemvalue="Application.FieldDependencyInjectionDemo" />
         <item itemvalue="Application.com.ceva.spring6.start_here.field_autowiring.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ConfigurableMessageProviderDemo" />
-        <item itemvalue="Application.ConstructorConfusion" />
-        <item itemvalue="Application.SetterInjectionDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +352,8 @@
       <workItem from="1722523812896" duration="13335000" />
       <workItem from="1725284897500" duration="13684000" />
       <workItem from="1725366551451" duration="23897000" />
-      <workItem from="1725459972116" duration="7021000" />
+      <workItem from="1725459972116" duration="8593000" />
+      <workItem from="1725482134607" duration="6058000" />
     </task>
     <servers />
   </component>
