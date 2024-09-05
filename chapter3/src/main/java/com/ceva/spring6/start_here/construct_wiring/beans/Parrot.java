@@ -1,4 +1,4 @@
-package com.ceva.spring6.start_here.construct_wiring;
+package com.ceva.spring6.start_here.construct_wiring.beans;
 
 public class Parrot {
     private String name;

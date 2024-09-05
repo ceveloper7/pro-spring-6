@@ -1,10 +1,16 @@
-package com.ceva.spring6.start_here.construct_wiring;
+package com.ceva.spring6.start_here.construct_wiring.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+/*
+ * La injeccion de dependencia en elconstructor solo funciona cuando la clase es anotada con @Component
+ */
+@Component
 public class Person {
     private String name;
-    private Parrot parrot;
+
+    private final Parrot parrot;
 
     @Autowired
     public Person(Parrot parrot) {
@@ -23,15 +29,11 @@ public class Person {
         return parrot;
     }
 
-    public void setParrot(Parrot parrot) {
-        this.parrot = parrot;
-    }
-
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", parrot=" + parrot +
+                ", his/her parrot is=" + parrot .getName()+
                 '}';
     }
 }
