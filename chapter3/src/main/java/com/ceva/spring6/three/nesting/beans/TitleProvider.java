@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
  * Se provee el titulo de la cancion segun el contexto.
  */
 public class TitleProvider {
-    private String title = "Gravity";
+    private String title = "Dear boy";
 
     public String getTitle() {
         return title;

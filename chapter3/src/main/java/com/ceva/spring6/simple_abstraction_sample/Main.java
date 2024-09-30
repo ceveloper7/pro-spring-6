@@ -1,9 +1,7 @@
 package com.ceva.spring6.simple_abstraction_sample;
 
-import com.ceva.spring6.simple_abstraction_sample.Config.ProjectConfiguration;
+import com.ceva.spring6.simple_abstraction_sample.config.ProjectConfiguration;
 import com.ceva.spring6.simple_abstraction_sample.models.Comment;
-import com.ceva.spring6.simple_abstraction_sample.proxies.EmailCommentNotificationProxy;
-import com.ceva.spring6.simple_abstraction_sample.repositories.DBCommentRepository;
 import com.ceva.spring6.simple_abstraction_sample.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

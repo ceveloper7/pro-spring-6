@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 public class InjectSimpleSpel {
 
     /*
-     * Con Spring expression language SpEL podemos acceder a cualquier bean y propiedad administrado por spring y manipularlos para su uso
-     * en la aplicacion.
+     * Con Spring expression language SpEL podemos acceder a cualquier bean (injectSimpleConfig) y propiedad administrado por spring
+     * y manipularlos para su uso en la aplicacion.
      */
     @Value("#{injectSimpleConfig.name.toUpperCase()}")
     private String name;

@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component("injectSimpleConfig")
 public class InjectSimpleParam {
-    private String name = "John Mayer";
+    private String name = "Cosme Fulanito";
     private int age = 40;
     private float height = 1.92f;
     private boolean developer = false;

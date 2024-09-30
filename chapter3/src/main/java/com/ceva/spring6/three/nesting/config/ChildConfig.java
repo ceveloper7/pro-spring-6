@@ -26,7 +26,7 @@ public class ChildConfig implements ApplicationContextAware{
     // 3 beans a los que se les injecta el titulo desde un bean TitleProvider
     /*
      * se le inyecta el valor provisto por el bean parentProvider declarado en el contexto principal
-     * el valor que se injecta es Gravity
+     * el valor que se injecta es Dear boy
      */
     @Bean
     public Song song1(@Value("#{parentProvider.title}")String title){

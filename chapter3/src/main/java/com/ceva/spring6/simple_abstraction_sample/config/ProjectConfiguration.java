@@ -1,4 +1,4 @@
-package com.ceva.spring6.simple_abstraction_sample.Config;
+package com.ceva.spring6.simple_abstraction_sample.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
