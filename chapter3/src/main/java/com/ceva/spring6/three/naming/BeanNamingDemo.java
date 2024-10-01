@@ -19,7 +19,7 @@ public class BeanNamingDemo {
          * simpleBean
          * anotherSimpleBean
          */
-        Arrays.stream(ctx.getBeanDefinitionNames()).forEach(beanName -> logger.debug(beanName));
+        Arrays.stream(ctx.getBeanDefinitionNames()).forEach(beanName -> logger.debug(beanName)); // recuperamos todo los nombres de los beans
 /*
         try {
             ctx.getBean(SimpleBean.class);
