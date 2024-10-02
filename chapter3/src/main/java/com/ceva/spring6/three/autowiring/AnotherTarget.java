@@ -26,6 +26,7 @@ public class AnotherTarget {
         this.fooOne = fooOne;
     }
 
+    // se llama al bean descrito en la clase AutowiringCfg
     @Autowired
     public void setFooTwo(@Qualifier("anotherFoo")Foo fooTwo) {
         logger.info(" --> AnotherTarget#setFooTwo(Foo) called");

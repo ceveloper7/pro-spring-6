@@ -13,10 +13,10 @@ public class AutowiringDemo {
 
         // recuperamos el bean Target
         var target = ctx.getBean(Target.class);
-        LOGGER.info("target: Created target? {}" , target != null);
+        LOGGER.info("target: Created target? {}" , target != null); // se busca en Target un constructor con @Autowired si lo hay, se lo llama.
         LOGGER.info("target: Injected bar? {}" , target.bar != null);
         LOGGER.info("target: Injected fooOne? {}" , target.fooOne != null ? target.fooOne.id: "");
-        LOGGER.info("target: Injected fooTwo? {}" , target.fooTwo != null ? target.fooTwo.id : "");
+        LOGGER.info("target: Injected fooTwo? {}" , target.fooTwo != null ? target.fooTwo.id : "is null");
 
         var anotherTarget = ctx.getBean(AnotherTarget.class);
         LOGGER.info("anotherTarget: Created anotherTarget? {}" , anotherTarget != null);

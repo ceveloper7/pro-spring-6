@@ -8,8 +8,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+/*
+ *
+ */
 @Component("nonSingleton")
-// cambiamos el modo de instancia, de singleto (por defecto en spring) a no singleton
+// cambiamos el modo de instancia singleton, se mantiene una unica instancia del bean en el App Context (por defecto en spring) a no singleton
 // con prototype le indicamos a spring que cree una nueva instancia del bean cada vez
 // que la app solicita una nueva instancia del bean Singer
 @Scope(scopeName = "prototype")

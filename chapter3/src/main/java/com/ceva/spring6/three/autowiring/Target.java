@@ -20,7 +20,8 @@ public class Target {
     Foo fooTwo;
     Bar bar;
 
-    // constructor sin argumento
+    // constructor sin argumento. Si ningun constructor tiene @Autowired y no se le dice a spring
+    // que hacer entonces llama al constructor por defecto.
    public Target() {
         logger.info(" --> Target() called");
     }
