@@ -20,10 +20,11 @@ public class FileManager {
         }
     }
 
-    // eliminamos el archivo creado en el constructor
+    // eliminamos el archivo creado en el constructor. este metodo se llama antes que el bean fileManager se destruya
     private void destroyMethod() throws IOException {
         logger.info("Calling destroyMethod() on bean of type {}", FileManager.class);
         if (file != null) {
+            // eliminamos el archivo creado en el constructor
             Files.deleteIfExists(file);
         }
     }

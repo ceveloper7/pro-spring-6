@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/PropertiesEditorCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/ValuesHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/resources/test1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/AutowiringDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/autowiring/AutowiringDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/nosingleton/NonSingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter3/src/main/java/com/ceva/spring6/three/nosingleton/NonSingletonDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/MultiInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/MultiInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/NamedSinger.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/NamedSinger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/ShutdownHookBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/ShutdownHookBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DemoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DemoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DestroyMethodDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DestroyMethodDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/FactoryBeanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/FactoryBeanDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/Singer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/SingerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/SingerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/DisposableBeanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/DisposableBeanDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/SingerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/SingerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/PreDestroyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/PreDestroyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/resources/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,97 +66,98 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.AlbumServiceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AllInitMethodsDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AllServiceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AnotherProfileDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AuditServiceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AutowiringDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AwareDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BeanNameGerneratorDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BeanNamingDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CDLDemo.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CollectionInjectionDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigurableMessageProviderDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConstructorConfusion.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConstructorDependencyInjectionDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ContextNestingDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CoverterPropertiesTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CustomPropertyEditorDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Demo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DestroyMethodDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DisposableBeanDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EnversServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FactoryBeanDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FieldDependencyInjectionDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloWorldDecoupled.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HibernateDemoV1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.IC_DependencyPullSample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InitMethodDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InitializingBeanDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InjectParamDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InjectSimpleDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.InjectSimpleParamDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JpaDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MessageSourceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MethodInjectionDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NonSingletonDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PlainJdbcDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PostConstructDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PreDestroyDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProfileDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PropertySourceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Publisher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RepoDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ResourceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SetterInjectionDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SingerFieldInjectionDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SingerServiceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UntypedResultDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.ceva.spring6.start_here.field_autowiring.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.ceva.spring6.ten.AllServiceDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.ceva.spring_start_here_ch02.services.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.springDemo2.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.spring_start_here_ch02.services.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataSourceConfigTest.testBasicDataSource.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataSourceConfigTest.testSimpleDataSource.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataSourceConfigTest.testSpringJdbc.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcNamedTemplateConfigTest.testFindAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RepoBeanTest.testInsertWithSqlUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RepoBeanTest.testUpdateWithSqlUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ceva/local-projects/intellij/spring/pro-spring6/capitulo2/src/main/java/com/ceva/spring_start_here_ch02&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.248503&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d0031b7fee67e42fdd410ced8d004f52&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AlbumServiceDemo.executor": "Run",
+    "Application.AllInitMethodsDemo.executor": "Run",
+    "Application.AllServiceDemo.executor": "Run",
+    "Application.AnotherProfileDemo.executor": "Run",
+    "Application.AuditServiceDemo.executor": "Run",
+    "Application.AutowiringDemo.executor": "Run",
+    "Application.AwareDemo.executor": "Run",
+    "Application.BeanNameGerneratorDemo.executor": "Run",
+    "Application.BeanNamingDemo.executor": "Run",
+    "Application.CDLDemo.executor": "Debug",
+    "Application.CollectionInjectionDemo.executor": "Run",
+    "Application.ConfigurableMessageProviderDemo.executor": "Run",
+    "Application.ConstructorConfusion.executor": "Run",
+    "Application.ConstructorDependencyInjectionDemo.executor": "Run",
+    "Application.ContextNestingDemo.executor": "Run",
+    "Application.CoverterPropertiesTest.executor": "Run",
+    "Application.CustomPropertyEditorDemo.executor": "Run",
+    "Application.Demo.executor": "Run",
+    "Application.DestroyMethodDemo.executor": "Run",
+    "Application.DisposableBeanDemo.executor": "Run",
+    "Application.DiverseValuesDemo.executor": "Run",
+    "Application.EnversServiceTest.executor": "Run",
+    "Application.FactoryBeanDemo.executor": "Run",
+    "Application.FieldDependencyInjectionDemo.executor": "Run",
+    "Application.HelloWorldDecoupled.executor": "Run",
+    "Application.HibernateDemoV1.executor": "Run",
+    "Application.IC_DependencyPullSample.executor": "Run",
+    "Application.InitMethodDemo.executor": "Run",
+    "Application.InitializingBeanDemo.executor": "Run",
+    "Application.InjectParamDemo.executor": "Run",
+    "Application.InjectSimpleDemo.executor": "Run",
+    "Application.InjectSimpleParamDemo.executor": "Run",
+    "Application.JpaDemo.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MessageSourceDemo.executor": "Run",
+    "Application.MethodInjectionDemo.executor": "Run",
+    "Application.NonSingletonDemo.executor": "Run",
+    "Application.PlainJdbcDemo.executor": "Run",
+    "Application.PostConstructDemo.executor": "Run",
+    "Application.PreDestroyDemo.executor": "Run",
+    "Application.ProfileDemo.executor": "Run",
+    "Application.PropertySourceDemo.executor": "Run",
+    "Application.Publisher.executor": "Run",
+    "Application.RepoDemo.executor": "Run",
+    "Application.ResourceDemo.executor": "Run",
+    "Application.SetterInjectionDemo.executor": "Run",
+    "Application.SingerFieldInjectionDemo.executor": "Run",
+    "Application.SingerServiceDemo.executor": "Run",
+    "Application.UntypedResultDemo.executor": "Run",
+    "Application.com.ceva.spring6.start_here.field_autowiring.Main.executor": "Run",
+    "Application.com.ceva.spring6.ten.AllServiceDemo.executor": "Run",
+    "Application.com.ceva.spring_start_here_ch02.services.Main.executor": "Run",
+    "Application.springDemo2.Main.executor": "Run",
+    "Application.spring_start_here_ch02.services.Main.executor": "Run",
+    "JUnit.DataSourceConfigTest.testBasicDataSource.executor": "Run",
+    "JUnit.DataSourceConfigTest.testSimpleDataSource.executor": "Run",
+    "JUnit.DataSourceConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.JdbcNamedTemplateConfigTest.testFindAll.executor": "Run",
+    "JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums.executor": "Run",
+    "JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor": "Run",
+    "JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor": "Run",
+    "JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery.executor": "Run",
+    "JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery.executor": "Run",
+    "JUnit.RepoBeanTest.testInsertAlbumsWithBatchSqlUpdate.executor": "Run",
+    "JUnit.RepoBeanTest.testInsertWithSqlUpdate.executor": "Run",
+    "JUnit.RepoBeanTest.testUpdateWithSqlUpdate.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ceva/local-projects/intellij/spring/pro-spring6/capitulo2/src/main/java/com/ceva/spring_start_here_ch02",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.248503",
+    "settings.editor.selected.configurable": "preferences.applicationServers",
+    "spring.configuration.checksum": "d0031b7fee67e42fdd410ced8d004f52",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/chapter11/src/main/resources" />
@@ -157,13 +178,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AutowiringDemo">
-    <configuration name="AutowiringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.autowiring.AutowiringDemo" />
-      <module name="chapter3" />
+  <component name="RunManager" selected="Application.DiverseValuesDemo">
+    <configuration name="AwareDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.aware.AwareDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.autowiring.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.aware.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanNameGerneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.naminggenerator.BeanNameGerneratorDemo" />
-      <module name="chapter3" />
+    <configuration name="DisposableBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.intf.DisposableBeanDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.naminggenerator.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.intf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,12 +205,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanNamingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.naming.BeanNamingDemo" />
-      <module name="chapter3" />
+    <configuration name="DiverseValuesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.builtin_propertieseditors.DiverseValuesDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.naming.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.builtin_propertieseditors.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,12 +218,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionInjectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.collectioninject.CollectionInjectionDemo" />
-      <module name="chapter3" />
+    <configuration name="FactoryBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.factory.FactoryBeanDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.collectioninject.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,12 +231,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NonSingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.three.nosingleton.NonSingletonDemo" />
-      <module name="chapter3" />
+    <configuration name="PreDestroyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.jsr250PreDestroy.PreDestroyDemo" />
+      <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.three.nosingleton.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.jsr250PreDestroy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,19 +269,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
-      <item itemvalue="Application.AutowiringDemo" />
-      <item itemvalue="Application.BeanNameGerneratorDemo" />
-      <item itemvalue="Application.BeanNamingDemo" />
-      <item itemvalue="Application.NonSingletonDemo" />
-      <item itemvalue="Application.CollectionInjectionDemo" />
+      <item itemvalue="Application.DiverseValuesDemo" />
+      <item itemvalue="Application.FactoryBeanDemo" />
+      <item itemvalue="Application.AwareDemo" />
+      <item itemvalue="Application.DisposableBeanDemo" />
+      <item itemvalue="Application.PreDestroyDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AutowiringDemo" />
-        <item itemvalue="Application.NonSingletonDemo" />
-        <item itemvalue="Application.BeanNameGerneratorDemo" />
-        <item itemvalue="Application.BeanNamingDemo" />
-        <item itemvalue="Application.CollectionInjectionDemo" />
+        <item itemvalue="Application.DiverseValuesDemo" />
+        <item itemvalue="Application.FactoryBeanDemo" />
+        <item itemvalue="Application.AwareDemo" />
+        <item itemvalue="Application.PreDestroyDemo" />
+        <item itemvalue="Application.DisposableBeanDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +371,11 @@
       <workItem from="1725734536708" duration="9323000" />
       <workItem from="1727055440461" duration="1112000" />
       <workItem from="1727710299955" duration="16220000" />
-      <workItem from="1727806659837" duration="8792000" />
+      <workItem from="1727806659837" duration="11232000" />
+      <workItem from="1727895588692" duration="4332000" />
+      <workItem from="1727977821640" duration="7707000" />
+      <workItem from="1728065869034" duration="8683000" />
+      <workItem from="1728136214996" duration="10982000" />
     </task>
     <servers />
   </component>

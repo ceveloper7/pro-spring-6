@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "com.ceva.spring6.four")
+@ComponentScan(basePackages = "com.ceva.spring6.four.jsr250PostConstruct")
 public class SingerConfiguration {
     @Bean
     Singer singerOne(){

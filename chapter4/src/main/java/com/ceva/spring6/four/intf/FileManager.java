@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+/*
+ * Asi como con las callback de inicializacion, Spring proporciona la interface DisposableBean que permite implementar un mecanismo
+ * para recibir callbacks de destruccion
+ */
 public class FileManager implements DisposableBean {
     private static Logger LOGGER = LoggerFactory.getLogger(FileManager.class);
     private Path file;
@@ -21,6 +25,9 @@ public class FileManager implements DisposableBean {
         }
     }
 
+    /*
+     * el metodo destroy de la interface DisposableBean se llama justo antes de que se destruya el bean FileManager
+     */
     @Override
     public void destroy() throws Exception {
         LOGGER.info("Calling destroy() on bean of type {}", FileManager.class);

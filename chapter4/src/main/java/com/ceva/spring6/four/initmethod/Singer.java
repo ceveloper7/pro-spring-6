@@ -21,7 +21,9 @@ public class Singer {
         this.age = age;
     }
 
-    /* metodo que actua como callback init */
+    /* metodo que actua como callback init.
+    *  La unica restriccion de este metodo de inicializacion es que no debe aceptar ningun argumento.
+    * */
     private void init() {
         logger.info("Initializing bean");
         // verificamos si se ha establecido la propiedad name
@@ -30,7 +32,7 @@ public class Singer {
             // si name no esta establecida, usamos un valor predeterminado
             name = DEFAULT_NAME;
         }
-        // comprobamos si la propiedad age se ha establecido
+        // comprobamos si la propiedad age se ha establecido de lo contrario lanzamos una exception
         if (age == Integer.MIN_VALUE) {
             // si no esta establecido, lanzamos una excepcion
             throw new IllegalArgumentException(

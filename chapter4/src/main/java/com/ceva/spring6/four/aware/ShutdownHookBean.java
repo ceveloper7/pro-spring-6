@@ -8,8 +8,11 @@ import org.springframework.context.support.GenericApplicationContext;
 public class ShutdownHookBean implements ApplicationContextAware {
     private ApplicationContext ctx;
     /** @Implements {@link ApplicationContextAware#setApplicationContext(ApplicationContext)} }*/
+    // Spring llama a este metodo para pasarle a nuestro bean una referencia del ApplicationContext
     public void setApplicationContext(ApplicationContext ctx) throws BeansException {
+        // validamos que el ApplicationContext sea de tipo GenericApplicationContext
         if (ctx instanceof GenericApplicationContext) {
+            // registramos un ShutdownHook
             ((GenericApplicationContext) ctx).registerShutdownHook();
         }
     }

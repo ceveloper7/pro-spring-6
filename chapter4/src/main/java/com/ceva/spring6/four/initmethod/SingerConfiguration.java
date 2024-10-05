@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.ceva.spring6.four.initmethod")
 public class SingerConfiguration {
 
-    // le indicamos a Spring que llame al metodo init del bean Singer
+    // le indicamos a Spring que llame al metodo init del bean Singer que se ejecutara en el evento post-initialization
     @Bean(initMethod = "init")
     Singer singerOne(){
         Singer singer = new Singer();
