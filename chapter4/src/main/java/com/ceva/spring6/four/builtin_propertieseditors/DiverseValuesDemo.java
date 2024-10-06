@@ -10,7 +10,7 @@ public class DiverseValuesDemo {
     public static void main(String... args) throws Exception {
         //System.out.println(System.getProperty("java.io.tmpdir"));
         File baseDir = new File(System.getProperty("java.io.tmpdir"));
-        Path path = Files.createFile(Path.of(baseDir.getAbsolutePath(), "test1.txt"));
+        Path path = Files.createFile(Path.of(baseDir.getAbsolutePath(), "test.txt"));
         Files.writeString(path, "Hello World!");
         path.toFile().deleteOnExit();
 

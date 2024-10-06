@@ -23,13 +23,14 @@ public class ResourceDemo {
         Files.writeString(filePath, "Hello World!");
         filePath.toFile().deleteOnExit();
 
-//        Resource res1 = ctx.getResource("file://" + filePath);
-//        displayInfo(res1);
-//
+        // La clase Resource de Spring nos permite acceder a diversos recursos que nuestra aplicacion puede necesitar.
+        Resource res1 = ctx.getResource("file://" + filePath);
+        displayInfo(res1);
+
         Resource res2 = ctx.getResource("classpath:test.txt");
         displayInfo(res2);
 
-        Resource res3 = ctx.getResource("https://iuliana-cosmina.com");
+        Resource res3 = ctx.getResource("https://www.biblegateway.com/");
         displayInfo(res3);
     }
 

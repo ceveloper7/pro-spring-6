@@ -5,29 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/PropertiesEditorCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/ValuesHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/resources/test1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/MultiInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/all/MultiInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/NamedSinger.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/NamedSinger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/ShutdownHookBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/aware/ShutdownHookBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DemoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DemoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DestroyMethodDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/DestroyMethodDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/destroymethod/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/FactoryBeanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/FactoryBeanDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/factory/MessageDigestFactoryBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/Singer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/SingerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/initmethod/SingerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/DisposableBeanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/DisposableBeanDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/intf/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/SingerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PostConstruct/SingerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/PreDestroyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/jsr250PreDestroy/PreDestroyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/resources/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/CustomPropertyEditorCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/CustomPropertyEditorCfg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/FullName.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/FullName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/NamePropertyEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/NamePropertyEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/resource/ResourceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/resource/ResourceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/resources/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/resources/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +162,7 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DiverseValuesDemo">
+  <component name="RunManager" selected="Application.ResourceDemo">
     <configuration name="AwareDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.aware.AwareDemo" />
       <module name="chapter4" />
@@ -192,12 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DisposableBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.intf.DisposableBeanDemo" />
+    <configuration name="CustomPropertyEditorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.custompropertyeditor.CustomPropertyEditorDemo" />
       <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.intf.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.custompropertyeditor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -231,25 +215,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PreDestroyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.jsr250PreDestroy.PreDestroyDemo" />
-      <module name="chapter4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.jsr250PreDestroy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProfileDemo" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.profile.ProfileDemo" />
       <module name="chapter4" />
       <option name="PROGRAM_PARAMETERS" value="-Dspring.profiles.active=&quot;kindergarten&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.resource.ResourceDemo" />
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.four.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,19 +253,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
+      <item itemvalue="Application.CustomPropertyEditorDemo" />
       <item itemvalue="Application.DiverseValuesDemo" />
       <item itemvalue="Application.FactoryBeanDemo" />
+      <item itemvalue="Application.ResourceDemo" />
       <item itemvalue="Application.AwareDemo" />
-      <item itemvalue="Application.DisposableBeanDemo" />
-      <item itemvalue="Application.PreDestroyDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ResourceDemo" />
+        <item itemvalue="Application.CustomPropertyEditorDemo" />
         <item itemvalue="Application.DiverseValuesDemo" />
         <item itemvalue="Application.FactoryBeanDemo" />
         <item itemvalue="Application.AwareDemo" />
-        <item itemvalue="Application.PreDestroyDemo" />
-        <item itemvalue="Application.DisposableBeanDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -375,7 +359,7 @@
       <workItem from="1727895588692" duration="4332000" />
       <workItem from="1727977821640" duration="7707000" />
       <workItem from="1728065869034" duration="8683000" />
-      <workItem from="1728136214996" duration="10982000" />
+      <workItem from="1728136214996" duration="17480000" />
     </task>
     <servers />
   </component>

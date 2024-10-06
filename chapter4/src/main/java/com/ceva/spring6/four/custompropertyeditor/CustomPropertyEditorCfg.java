@@ -13,6 +13,8 @@ public class CustomPropertyEditorCfg {
     @Bean
     CustomEditorConfigurer customEditorConfigurer(){
         var cust = new CustomEditorConfigurer();
+        // injectamos el custom property editor NamePropertyEditor cuya clave de entrada es la clase FullName.class
+        // lo que significa que la clase FullName es la clase que se debe utilizar para esta implementacion.
         cust.setCustomEditors(Map.of(FullName.class, NamePropertyEditor.class));
         return cust;
     }
