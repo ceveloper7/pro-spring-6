@@ -10,10 +10,10 @@ public class ProfileDemo {
 
     public static void main(String... args) {
         //var profile= System.getProperty("spring.profiles.active");
-        //var profile = "highschool";
+        var profile = "highschool";
         var ctx = new AnnotationConfigApplicationContext();
-        ctx.getEnvironment().setActiveProfiles("highschool");
-        //ctx.getEnvironment().setDefaultProfiles("kindergarten);
+        ctx.getEnvironment().setActiveProfiles(profile); // establecemos el perfil activo
+        //ctx.getEnvironment().setDefaultProfiles("kindergarten","highschool");
         ctx.register(HighSchoolConfig.class, KindergartenConfig.class);
         ctx.refresh();
 

@@ -10,10 +10,14 @@ import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.times;
 
+/*
+ * Verificamos el comportamiento de la implementacion del bean StandardOutMessageRenderer.
+ */
 public class MessageRenderTest {
     @Test
     void testStandardOutMessageRenderer(){
         MessageProvider mockProvider = mock(MessageProvider.class);
+        // configuramos el comportamiento, el valor string que se devolvera cuando se llame al metodo getMessage()
         when(mockProvider.getMessage()).thenReturn("test message");
 
         MessageRenderer messageRenderer = new StandardOutMessageRenderer();

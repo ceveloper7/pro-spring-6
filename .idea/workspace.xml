@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/AllConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/model/MProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/model/MRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/provider/ConfigurableMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/provider/ProviderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/render/RendererConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/render/StandardOutMessageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/test/MessageRenderBestWayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/test/MessageRenderOneIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/test/MessageRenderTwoIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/builtin_propertieseditors/DiverseValuesDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/CustomPropertyEditorCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/CustomPropertyEditorCfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/FullName.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/FullName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/NamePropertyEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/custompropertyeditor/NamePropertyEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/resource/ResourceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/resource/ResourceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/resources/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/resources/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/FoodProviderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/FoodProviderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/ProfileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/ProfileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/logic_unit_test/MessageRenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/logic_unit_test/MessageRenderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +123,9 @@
     "JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.MessageRenderBestWayTest.executor": "Run",
+    "JUnit.MessageRenderOneIT.testConfig.executor": "Run",
+    "JUnit.MessageRenderTest.executor": "Run",
     "JUnit.MessageRenderTest.testStandardOutMessageRenderer.executor": "Run",
     "JUnit.RepoBeanTest.testFindAllWithMappingSqlQuery.executor": "Run",
     "JUnit.RepoBeanTest.testFindByNameWithMappingSqlQuery.executor": "Run",
@@ -162,52 +173,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ResourceDemo">
-    <configuration name="AwareDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.aware.AwareDemo" />
+  <component name="RunManager" selected="JUnit.MessageRenderBestWayTest">
+    <configuration name="AnotherProfileDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.profile.highschool.AnotherProfileDemo" />
       <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.aware.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomPropertyEditorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.custompropertyeditor.CustomPropertyEditorDemo" />
-      <module name="chapter4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.custompropertyeditor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiverseValuesDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.builtin_propertieseditors.DiverseValuesDemo" />
-      <module name="chapter4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.builtin_propertieseditors.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactoryBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.factory.FactoryBeanDemo" />
-      <module name="chapter4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.factory.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.profile.highschool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -220,20 +192,69 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.profile.ProfileDemo" />
       <module name="chapter4" />
-      <option name="PROGRAM_PARAMETERS" value="-Dspring.profiles.active=&quot;kindergarten&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="-Dspring.profiles.active=&quot;highschool&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.resource.ResourceDemo" />
+    <configuration name="MessageRenderBestWayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="chapter4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.resource.*" />
+          <option name="PATTERN" value="com.ceva.spring6.four.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.test.MessageRenderBestWayTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRenderOneIT.testConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.four.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.test.MessageRenderOneIT" />
+      <option name="METHOD_NAME" value="testConfig" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.four.logic_unit_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.logic_unit_test" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.logic_unit_test.MessageRenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRenderTest.testStandardOutMessageRenderer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.four.logic_unit_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.logic_unit_test" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.logic_unit_test.MessageRenderTest" />
+      <option name="METHOD_NAME" value="testStandardOutMessageRenderer" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,19 +274,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
-      <item itemvalue="Application.CustomPropertyEditorDemo" />
-      <item itemvalue="Application.DiverseValuesDemo" />
-      <item itemvalue="Application.FactoryBeanDemo" />
-      <item itemvalue="Application.ResourceDemo" />
-      <item itemvalue="Application.AwareDemo" />
+      <item itemvalue="Application.AnotherProfileDemo" />
+      <item itemvalue="JUnit.MessageRenderBestWayTest" />
+      <item itemvalue="JUnit.MessageRenderTest" />
+      <item itemvalue="JUnit.MessageRenderOneIT.testConfig" />
+      <item itemvalue="JUnit.MessageRenderTest.testStandardOutMessageRenderer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ResourceDemo" />
-        <item itemvalue="Application.CustomPropertyEditorDemo" />
-        <item itemvalue="Application.DiverseValuesDemo" />
-        <item itemvalue="Application.FactoryBeanDemo" />
-        <item itemvalue="Application.AwareDemo" />
+        <item itemvalue="JUnit.MessageRenderBestWayTest" />
+        <item itemvalue="JUnit.MessageRenderOneIT.testConfig" />
+        <item itemvalue="JUnit.MessageRenderTest" />
+        <item itemvalue="JUnit.MessageRenderTest.testStandardOutMessageRenderer" />
+        <item itemvalue="Application.AnotherProfileDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -360,6 +381,8 @@
       <workItem from="1727977821640" duration="7707000" />
       <workItem from="1728065869034" duration="8683000" />
       <workItem from="1728136214996" duration="17480000" />
+      <workItem from="1728231165053" duration="16462000" />
+      <workItem from="1729520670007" duration="6751000" />
     </task>
     <servers />
   </component>
