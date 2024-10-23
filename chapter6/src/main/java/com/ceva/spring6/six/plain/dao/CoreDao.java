@@ -9,12 +9,14 @@ import java.sql.SQLException;
  * la BD
  */
 public interface CoreDao {
+    // metodo que recupera una conexion
     default Connection getConnection() throws SQLException {
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/spring6?useSSL=false",
-                "root", "root");
+                "jdbc:mysql://localhost:3306/prospring6?useSSL=false",
+                "barcvilla", "b4000$.");
     }
 
+    // metodo que cierra la conexion
     default void closeConnection(Connection connection) throws SQLException {
         if (connection == null) {
             return;

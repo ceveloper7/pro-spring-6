@@ -15,6 +15,7 @@ public class SpringJdbcTemplateCfg {
     @Autowired
     DataSource dataSource;
 
+    // Inicializamos una unica instancia de JdbcTemplate y la inyectamos en todos los objetos DAO
     @Bean
     public JdbcTemplate jdbcTemplate(){
         JdbcTemplate jdbcTemplate = new JdbcTemplate();

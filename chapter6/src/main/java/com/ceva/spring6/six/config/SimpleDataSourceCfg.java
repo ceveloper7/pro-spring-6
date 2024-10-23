@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import java.sql.Driver;
 
 @Configuration
-@PropertySource("classpath:db/jdbc.properties")
+@PropertySource("classpath:db/jdbc.properties") // spring inyecta las propiedades del archivo en la clase de configuracion.
 public class SimpleDataSourceCfg {
     private static Logger LOGGER = LoggerFactory.getLogger(SimpleDataSourceCfg.class);
     @Value("${jdbc.driverClassName}")
@@ -27,6 +27,10 @@ public class SimpleDataSourceCfg {
     @Value("${jdbc.password}")
     private String password;
 
+    /*
+     * La diferencia entre un java.sql.Connection y una javax.sql.DataSource es que DataSource proporciona y administra conexiones a diferencia de
+     * Connection que solo proporciona una conexion a la BD.
+     */
     @Bean
     @SuppressWarnings("unchecked")
     public DataSource dataSource() {

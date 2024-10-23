@@ -19,7 +19,9 @@ import com.ceva.spring6.six.config.SimpleDataSourceCfg;
 public class DataSourceConfigTest {
     private static Logger LOGGER = LoggerFactory.getLogger(DataSourceConfigTest.class);
 
+    // Test la clase de configuracion SimpleDataSource
     private void testDataSource(DataSource dataSource) throws SQLException{
+        // con el bean dataSource obtenido del contexto creamos una conexion.
         try (var connection = dataSource.getConnection();
              var statement = connection.prepareStatement("SELECT 1");
              var resultSet = statement.executeQuery()){
@@ -32,10 +34,13 @@ public class DataSourceConfigTest {
         }
     }
 
+    /*
+     * Probamos la clase SimpleDataSourceConfig.class
+     */
     @Test
     public void testSimpleDataSource() throws SQLException {
         var ctx = new AnnotationConfigApplicationContext(SimpleDataSourceCfg.class);
-        // obtenemos el bean dataSource
+        // obtenemos el bean dataSource del contexto
         var dataSource = ctx.getBean("dataSource", DataSource.class);
         assertNotNull(dataSource);
         testDataSource(dataSource);
@@ -51,6 +56,7 @@ public class DataSourceConfigTest {
         ctx.close();
     }
 
+    // test de com.ceva.spring6.six.plain.datasourcecfg_test.SpringDatasourceCfg
     @Test
     public void testSpringJdbc() throws SQLException {
         var ctx = new AnnotationConfigApplicationContext(SpringDatasourceCfg.class);
@@ -58,7 +64,18 @@ public class DataSourceConfigTest {
         assertNotNull(dataSource);
         testDataSource(dataSource);
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
-        assertEquals("John Mayer", singerDao.findNameById(1L));
+        assertEquals("John Butler", singerDao.findNameById(3L));
+        ctx.close();
+    }
+
+    @Test
+    public void testSpringJdbcHybrid()throws SQLException {
+        var ctx = new AnnotationConfigApplicationContext(com.ceva.spring6.six.hybrid.SpringDatasourceCfg.class);
+        var dataSource = ctx.getBean("dataSource", DataSource.class);
+        assertNotNull(dataSource);
+        testDataSource(dataSource);
+        var singerDao = ctx.getBean("singerDao", com.ceva.spring6.six.hybrid.SingerDao.class);
+        assertEquals("John Butler", singerDao.findNameById(3L));
         ctx.close();
     }
 }

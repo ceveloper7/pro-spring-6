@@ -1,5 +1,8 @@
 package com.ceva.spring6.six.plain.pojos;
 
+/*
+ * Clase POJO Album: mapeo de la tabla Album
+ */
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.io.Serializable;

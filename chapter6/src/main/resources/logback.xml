@@ -12,8 +12,7 @@
         </encoder>
     </appender>
     <!--  Cambiamos el nivel de registro de debug
-          En el nivel debug la app generara todas las declaraciones sql que se
-          enviaran a la BD para saber lo que esta sucediendo exactamente -->
+          En el nivel debug la app generara todas las declaraciones sql que se enviaran a la BD para saber lo que esta sucediendo exactamente -->
     <logger name="com.ceva.spring6.six" level="debug"/>
 
     <logger name="org.springframework" level="off"/>

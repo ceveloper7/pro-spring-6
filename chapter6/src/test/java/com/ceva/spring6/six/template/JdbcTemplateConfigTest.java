@@ -14,8 +14,8 @@ public class JdbcTemplateConfigTest {
         assertNotNull(jdbcTemplate);
 
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
-        // Probamos que findNameById() retorne John Mayer
-        assertEquals("John Mayer", singerDao.findNameById(1L));
+        // Probamos que findNameById() retorne la cadena John Alexander Waymon
+        assertEquals("John Alexander Waymon", singerDao.findNameById(1L));
         ctx.close();
     }
 }

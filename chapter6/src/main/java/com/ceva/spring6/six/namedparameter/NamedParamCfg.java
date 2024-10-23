@@ -15,7 +15,7 @@ public class NamedParamCfg {
     @Autowired
     DataSource dataSource;
 
-    // bean de tipo NamedParameterJdbcTemplate
+    // bean de tipo NamedParameterJdbcTemplate que nos permite asignarle un nombre a cada parametro.
     @Bean
     public NamedParameterJdbcTemplate namedTemplate(){
         return new NamedParameterJdbcTemplate(dataSource);

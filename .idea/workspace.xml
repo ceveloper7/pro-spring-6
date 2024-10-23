@@ -5,21 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f49a0e4-e992-4142-8720-d14c5562c245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/AllConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/model/MProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/model/MRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/provider/ConfigurableMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/provider/ProviderConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/render/RendererConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/impl/render/StandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/test/MessageRenderBestWayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/test/MessageRenderOneIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/test/MessageRenderTwoIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/FoodProviderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/FoodProviderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/ProfileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/main/java/com/ceva/spring6/four/profile/ProfileDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/logic_unit_test/MessageRenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter4/src/test/java/com/ceva/spring6/four/logic_unit_test/MessageRenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/QueryConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/QueryConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/config/BasicDataSourceCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/config/BasicDataSourceCfg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/config/SimpleDataSourceCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/config/SimpleDataSourceCfg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/namedparameter/NamedParamCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/namedparameter/NamedParamCfg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/PlainJdbcDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/PlainJdbcDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/dao/CoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/dao/CoreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/dao/pojos/PlainSingerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/dao/pojos/PlainSingerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/dao/pojos/SingerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/dao/pojos/SingerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/datasourcecfg_test/SingerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/datasourcecfg_test/SingerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/datasourcecfg_test/SpringDatasourceCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/datasourcecfg_test/SpringDatasourceCfg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/pojos/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/pojos/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/pojos/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/plain/pojos/Singer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/RowMapperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/RowMapperDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/SingerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/rowmapper/SingerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/template/SpringJdbcTemplateCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/java/com/ceva/spring6/six/template/SpringJdbcTemplateCfg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/resources/db/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/resources/db/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/namedparameter/JdbcNamedTemplateConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/namedparameter/JdbcNamedTemplateConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/plain/DataSourceConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/plain/DataSourceConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/rowmapper/JdbcNamedTemplateConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/rowmapper/JdbcRowMapperConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/template/JdbcTemplateConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter6/src/test/java/com/ceva/spring6/six/template/JdbcTemplateConfigTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,9 +125,12 @@
     "JUnit.DataSourceConfigTest.testBasicDataSource.executor": "Run",
     "JUnit.DataSourceConfigTest.testSimpleDataSource.executor": "Run",
     "JUnit.DataSourceConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.DataSourceConfigTest.testSpringJdbcHybrid.executor": "Run",
     "JUnit.JdbcNamedTemplateConfigTest.testFindAll.executor": "Run",
     "JUnit.JdbcNamedTemplateConfigTest.testFindAllWithAlbums.executor": "Run",
     "JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc.executor": "Run",
+    "JUnit.JdbcRowMapperConfigTest.testFindAll.executor": "Run",
+    "JUnit.JdbcRowMapperConfigTest.testFindAllWithAlbums.executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc (1).executor": "Run",
     "JUnit.JdbcTemplateConfigTest.testSpringJdbc.executor": "Run",
     "JUnit.MessageRenderBestWayTest.executor": "Run",
@@ -173,13 +183,13 @@
       <recent name="com.ceva.prospring6.three.constructor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MessageRenderBestWayTest">
-    <configuration name="AnotherProfileDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.profile.highschool.AnotherProfileDemo" />
-      <module name="chapter4" />
+  <component name="RunManager" selected="JUnit.JdbcRowMapperConfigTest.testFindAllWithAlbums">
+    <configuration name="PlainJdbcDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.plain.PlainJdbcDemo" />
+      <module name="chapter6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.profile.highschool.*" />
+          <option name="PATTERN" value="com.ceva.spring6.six.plain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,63 +207,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageRenderBestWayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter4" />
+    <configuration name="JdbcNamedTemplateConfigTest.testSpringJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.test.*" />
+          <option name="PATTERN" value="com.ceva.spring6.six.namedparameter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.test.MessageRenderBestWayTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MessageRenderOneIT.testConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.test" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.test.MessageRenderOneIT" />
-      <option name="METHOD_NAME" value="testConfig" />
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.namedparameter" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.namedparameter.JdbcNamedTemplateConfigTest" />
+      <option name="METHOD_NAME" value="testSpringJdbc" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageRenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter4" />
+    <configuration name="JdbcRowMapperConfigTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.logic_unit_test.*" />
+          <option name="PATTERN" value="com.ceva.spring6.six.rowmapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.logic_unit_test" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.logic_unit_test.MessageRenderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.rowmapper" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.rowmapper.JdbcRowMapperConfigTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageRenderTest.testStandardOutMessageRenderer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="chapter4" />
+    <configuration name="JdbcRowMapperConfigTest.testFindAllWithAlbums" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ceva.spring6.four.logic_unit_test.*" />
+          <option name="PATTERN" value="com.ceva.spring6.six.rowmapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ceva.spring6.four.logic_unit_test" />
-      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.four.logic_unit_test.MessageRenderTest" />
-      <option name="METHOD_NAME" value="testStandardOutMessageRenderer" />
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.rowmapper" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.rowmapper.JdbcRowMapperConfigTest" />
+      <option name="METHOD_NAME" value="testFindAllWithAlbums" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateConfigTest.testSpringJdbc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ceva.spring6.six.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ceva.spring6.six.template" />
+      <option name="MAIN_CLASS_NAME" value="com.ceva.spring6.six.template.JdbcTemplateConfigTest" />
+      <option name="METHOD_NAME" value="testSpringJdbc" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -274,19 +286,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProfileDemo" />
-      <item itemvalue="Application.AnotherProfileDemo" />
-      <item itemvalue="JUnit.MessageRenderBestWayTest" />
-      <item itemvalue="JUnit.MessageRenderTest" />
-      <item itemvalue="JUnit.MessageRenderOneIT.testConfig" />
-      <item itemvalue="JUnit.MessageRenderTest.testStandardOutMessageRenderer" />
+      <item itemvalue="Application.PlainJdbcDemo" />
+      <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc" />
+      <item itemvalue="JUnit.JdbcRowMapperConfigTest.testFindAll" />
+      <item itemvalue="JUnit.JdbcRowMapperConfigTest.testFindAllWithAlbums" />
+      <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MessageRenderBestWayTest" />
-        <item itemvalue="JUnit.MessageRenderOneIT.testConfig" />
-        <item itemvalue="JUnit.MessageRenderTest" />
-        <item itemvalue="JUnit.MessageRenderTest.testStandardOutMessageRenderer" />
-        <item itemvalue="Application.AnotherProfileDemo" />
+        <item itemvalue="JUnit.JdbcRowMapperConfigTest.testFindAllWithAlbums" />
+        <item itemvalue="JUnit.JdbcRowMapperConfigTest.testFindAll" />
+        <item itemvalue="JUnit.JdbcNamedTemplateConfigTest.testSpringJdbc" />
+        <item itemvalue="Application.PlainJdbcDemo" />
+        <item itemvalue="JUnit.JdbcTemplateConfigTest.testSpringJdbc" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +394,9 @@
       <workItem from="1728065869034" duration="8683000" />
       <workItem from="1728136214996" duration="17480000" />
       <workItem from="1728231165053" duration="16462000" />
-      <workItem from="1729520670007" duration="6751000" />
+      <workItem from="1729520670007" duration="10736000" />
+      <workItem from="1729561538628" duration="203000" />
+      <workItem from="1729608696952" duration="31065000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,7 @@ import java.util.Set;
 public class SingerMapper implements RowMapper<Singer> {
     @Override
     public  Singer mapRow(ResultSet rs, int rowNum) throws SQLException {
-        return new Singer(rs.getLong("singer_id"),
+        return new Singer(rs.getLong("id"),
                 rs.getString("first_name"),
                 rs.getString("last_name"),
                 rs.getDate("birth_date").toLocalDate(),

@@ -7,8 +7,12 @@ import java.util.Optional;
 import java.util.Set;
 
 /**
- * Interface que encapsula todos los metodos  de acceso de datos para la informacion de Singer
+ * Interface que encapsula todos los metodos (CRUD) de acceso de datos para la informacion de Singer
  * En lugar de DAO en spring se utiliza el termino Respository
+ * EL Patron DAO tiene los siguientes requisitos:
+ * 1. Interface DAO donde se definen las operaciones que se realizaran sobre un objeto.
+ * 2. Implementacion DAO esta clase proporciona la implementacion concreta para la interface DAO
+ * 3. Objetos modelados, tambien llamados entidades, se trata de simple POJOs de un registro de tabla.
  */
 public interface SingerDao extends CoreDao {
     Set<Singer> findAll();

@@ -16,6 +16,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashSet;
 
+/*
+ * Una de las principales desventajas de JDBC es la cantidad de codigo que se debe colocar en una clase DAO
+ */
 public class PlainSingerDao implements SingerDao{
     private static final Logger LOGGER = LoggerFactory.getLogger(PlainSingerDao.class);
     @Override
@@ -26,7 +29,7 @@ public class PlainSingerDao implements SingerDao{
              var resultSet = statement.executeQuery()) {
             while (resultSet.next()) {
                 var singer = new Singer();
-                singer.setId(resultSet.getLong("singer_id"));
+                singer.setId(resultSet.getLong("id"));
                 singer.setFirstName(resultSet.getString("first_name"));
                 singer.setLastName(resultSet.getString("last_name"));
                 singer.setBirthDate(resultSet.getDate("birth_date").toLocalDate());

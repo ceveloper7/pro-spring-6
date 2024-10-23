@@ -6,7 +6,10 @@ import com.ceva.spring6.six.plain.pojos.Singer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;
 
 public class PlainJdbcDemo {
     private static final Logger LOGGER = LoggerFactory.getLogger(PlainJdbcDemo.class);
@@ -43,14 +46,22 @@ public class PlainJdbcDemo {
         singerDao.delete(singer.getId());
         LOGGER.info("Listing singer data after new singer deleted:");
 
+        LOGGER.info("---------------");
+        LOGGER.info("Print Singers first and last names");
+        //allSingerNames();
         listAllSingers();
     }
 
     private static void listAllSingers() {
         var singers = singerDao.findAll();
+        singers.forEach(System.out::println);
+    }
 
-        for (Singer singer: singers) {
-            LOGGER.info(singer.toString());
-        }
+    private static void allSingerNames(){
+        var singers = singerDao.findAll();
+        List<String> singerNames = singers.stream()
+                .map(singer -> singer.getFirstName() + " " + singer.getLastName())
+                .collect(toList());
+        System.out.println(singerNames.toString());
     }
 }

@@ -7,8 +7,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class JdbcNamedTemplateConfigTest {
-    private static Logger LOGGER = LoggerFactory.getLogger(JdbcNamedTemplateConfigTest.class);
+public class JdbcRowMapperConfigTest {
+    private static Logger LOGGER = LoggerFactory.getLogger(JdbcRowMapperConfigTest.class);
 
     @Test
     public void testFindAll() {
@@ -17,7 +17,7 @@ public class JdbcNamedTemplateConfigTest {
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
 
         var singers = singerDao.findAll();
-        assertEquals(1, singers.size());
+        assertEquals(3, singers.size());
         singers.forEach(singer -> LOGGER.info(singer.toString()));
 
         ctx.close();
@@ -30,7 +30,7 @@ public class JdbcNamedTemplateConfigTest {
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
 
         var singers = singerDao.findAllWithAlbums();
-        assertEquals(1, singers.size());
+        assertEquals(2, singers.size());
         singers.forEach(singer -> LOGGER.info(singer.toString()));
 
         ctx.close();

@@ -32,15 +32,20 @@ public class RowMapperDao implements SingerDao{
      * static class SingerMapper implements RowMapper<Singer> pero optamos aqui
      * por el implementar findAll() con lambda
      */
+//    @Override
+//    public Set<Singer> findAll() {
+//        return new HashSet<>(namedTemplate.query(ALL_SELECT, (rs, rowNum) ->
+//                new Singer(rs.getLong("id"),
+//                        rs.getString("first_name"),
+//                        rs.getString("last_name"),
+//                        rs.getDate("birth_date").toLocalDate(),
+//                        Set.of())
+//        ));
+//    }
+
     @Override
     public Set<Singer> findAll() {
-        return new HashSet<>(namedTemplate.query(ALL_SELECT, (rs, rowNum) ->
-                new Singer(rs.getLong("singer_id"),
-                        rs.getString("first_name"),
-                        rs.getString("last_name"),
-                        rs.getDate("birth_date").toLocalDate(),
-                        Set.of())
-        ));
+        return new HashSet<>(namedTemplate.query("SELECT * FROM singer", new SingerMapper()));
     }
 
     @Override
@@ -49,7 +54,7 @@ public class RowMapperDao implements SingerDao{
             Map<Long, Singer> map = new HashMap<>();
             Singer singer;
             while (rs.next()) {
-                Long id = rs.getLong("singer_id");
+                Long id = rs.getLong("id");
                 singer = map.get(id);
                 if (singer == null) {
                     singer = new Singer(id,rs.getString("first_name"),rs.getString("last_name"),
@@ -58,7 +63,7 @@ public class RowMapperDao implements SingerDao{
                     map.put(id, singer);
                 }
 
-                var albumId = rs.getLong("album_id");
+                var albumId = rs.getLong("id");
                 if (albumId > 0) {
                     Album album = new Album(albumId,id,rs.getString("title"),
                             rs.getDate("release_date").toLocalDate());

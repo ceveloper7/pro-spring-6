@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySource;
 import javax.sql.DataSource;
 
 /**
- * bean que implementa javax.sql.DataSource
+ * bean que implementa org.apache.commons.dbcp2.BasicDataSource;
  */
 @Configuration
 @PropertySource("classpath:db/jdbc.properties")
@@ -29,7 +29,7 @@ public class BasicDataSourceCfg {
     @Value("${jdbc.password}")
     private String password;
 
-    @Bean(destroyMethod = "")
+    @Bean(destroyMethod = "close")
     public DataSource dataSource() {
         try {
             var dataSource = new BasicDataSource();
