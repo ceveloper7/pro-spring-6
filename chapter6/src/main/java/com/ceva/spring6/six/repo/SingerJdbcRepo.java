@@ -25,9 +25,12 @@ import java.util.Optional;
 import static com.ceva.spring6.six.QueryConstants.FIND_SINGER_ALBUM;
 
 /**
+ * Declaramos un bean llamado singerRepo
  * La anotacion @Repository se utiliza en bean que manejan operaciones de BD
  * Tambien @Repository le indica a Spring que realice excepciones SQL especificas
- * de la BD
+ * de la BD.
+ *
+ * Tras la inyeccion del bean dataSource, se construye una instancia de la clase SelectAllSingers
  */
 @Repository("singerRepo")
 public class SingerJdbcRepo implements SingerRepo{
@@ -136,7 +139,7 @@ public class SingerJdbcRepo implements SingerRepo{
                 Map.of("first_name", singer.firstName(),
                         "last_name", singer.lastName(),
                         "birth_date", singer.birthDate(),
-                        "singer_id", singer.id())
+                        "id", singer.id())
         );
         LOGGER.info("Existing singer updated with id: " + singer.id());
 

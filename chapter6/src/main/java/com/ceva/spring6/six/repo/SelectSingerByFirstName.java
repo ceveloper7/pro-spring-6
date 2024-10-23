@@ -20,7 +20,7 @@ public class SelectSingerByFirstName extends MappingSqlQuery<Singer>{
     }
 
     protected Singer mapRow(ResultSet rs, int rowNum) throws SQLException {
-        return new Singer(rs.getLong("singer_id"),rs.getString("first_name"),
+        return new Singer(rs.getLong("id"),rs.getString("first_name"),
                 rs.getString("last_name"),
                 rs.getDate("birth_date").toLocalDate(),
                 Set.of());

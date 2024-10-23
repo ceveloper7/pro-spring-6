@@ -25,7 +25,7 @@ public class RepoBeanTest {
         assertNotNull(singerRepo);
 
         var singers = singerRepo.findAll();
-        assertEquals(1, singers.size());
+        assertEquals(3, singers.size());
         singers.forEach(singer -> LOGGER.info(singer.toString()));
 
         ctx.close();

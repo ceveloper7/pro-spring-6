@@ -18,6 +18,6 @@ public class UpdateSinger extends SqlUpdate {
         super.declareParameter(new SqlParameter("first_name", Types.VARCHAR));
         super.declareParameter(new SqlParameter("last_name", Types.VARCHAR));
         super.declareParameter(new SqlParameter("birth_date", Types.DATE));
-        super.declareParameter(new SqlParameter("singer_id", Types.INTEGER));
+        super.declareParameter(new SqlParameter("id", Types.INTEGER));
     }
 }

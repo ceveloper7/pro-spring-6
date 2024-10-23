@@ -25,11 +25,22 @@ public class JdbcRowMapperConfigTest {
 
     @Test
     public void testFindAllWithAlbums() {
-        var ctx = new AnnotationConfigApplicationContext(TestDbCfg.class);
+        var ctx = new AnnotationConfigApplicationContext(RowMapperCfg.class);
 
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
 
         var singers = singerDao.findAllWithAlbums();
+        assertEquals(2, singers.size());
+        singers.forEach(singer -> LOGGER.info(singer.toString()));
+
+        ctx.close();
+    }
+
+    @Test
+    public void testFindAllWithAlbumsUsingResultSetExtractor(){
+        var ctx = new AnnotationConfigApplicationContext(RowMapperCfg.class);
+        var singerDao = ctx.getBean("singerDao", SingerDao.class);
+        var singers = singerDao.findAllWithAlbumsUsingResultSetExtractor();
         assertEquals(2, singers.size());
         singers.forEach(singer -> LOGGER.info(singer.toString()));
 

@@ -7,4 +7,5 @@ import java.util.Set;
 public interface SingerDao {
     Set<Singer> findAll();
     Set<Singer> findAllWithAlbums();
+    Set<Singer> findAllWithAlbumsUsingResultSetExtractor();
 }

@@ -9,7 +9,9 @@ import java.util.Set;
 
 /**
  * metodo mapRow() transforma los valores de un registro especifico de un ResultSet
- * en el objeto de dominio que deseemos, en este caso objeto Singer
+ * en el objeto de dominio que deseemos, en este caso objeto Singer.
+ * En el caso que se necesite compartir la clase mapper entre varios metodos de busqueda de la clase DAO esta clase SingerMapper podria
+ * ser declarada como clase interna static.
  */
 public class SingerMapper implements RowMapper<Singer> {
     @Override

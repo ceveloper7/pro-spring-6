@@ -20,13 +20,13 @@ public class RepoDemo {
         singerByFirstName.forEach(singer -> LOGGER.info(singer.toString()));
 
         LOGGER.info("--------------------------");
-        var singerNameById = singerRepo.findNameById(1L);
-        LOGGER.info(singerNameById);
+//        var singerNameById = singerRepo.findNameById(1L);
+//        LOGGER.info(singerNameById);
 
         // llamamos al procedimiento almacenado
         LOGGER.info("--------------------------");
-        var firstName = singerRepo.findFirstNameById(1L).orElse(null);
-        LOGGER.info("Retrieved {} ", firstName); // expect 'Ben'
+//        var firstName = singerRepo.findFirstNameById(1L).orElse(null);
+//        LOGGER.info("Retrieved {} ", firstName); // expect 'Ben'
         ctx.close();
     }
 }

@@ -16,26 +16,26 @@ import java.util.Set;
  * metodo extractData obtenemos un ResultSet y la convertirmos en una lista de registros
  * que contienen los cantantes con sus respectivos albumes producidos.
  */
-public class SingerWithAlbumsExtractor_old implements ResultSetExtractor<Set<Singer>> {
+public class SingerWithAlbumsExtractor implements ResultSetExtractor<Set<Singer>> {
     @Override
     public Set<Singer> extractData(ResultSet rs) throws SQLException, DataAccessException {
         Map<Long, Singer> map = new HashMap<>();
         Singer singer;
         while (rs.next()) {
-            Long id = rs.getLong("singer_id");
-            singer = map.get(id);
+            Long singer_id = rs.getLong("id");
+            singer = map.get(singer_id);
             if (singer == null) {
-                singer = new Singer(id,
+                singer = new Singer(singer_id,
                         rs.getString("first_name"),
                         rs.getString("last_name"),
                         rs.getDate("birth_date").toLocalDate(),
                         Set.of());
-                map.put(id, singer);
+                map.put(singer_id, singer);
             }
 
-            var albumId = rs.getLong("album_id");
+            var albumId = rs.getLong("id");
             if (albumId > 0) {
-                Album album = new Album(albumId,id,rs.getString("title"),
+                Album album = new Album(albumId,singer_id,rs.getString("title"),
                         rs.getDate("release_date").toLocalDate()
                 );
                 singer.albums().add(album);

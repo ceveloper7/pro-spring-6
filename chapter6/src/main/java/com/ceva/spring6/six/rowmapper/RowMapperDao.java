@@ -19,6 +19,12 @@ import static com.ceva.spring6.six.QueryConstants.ALL_JOIN_SELECT;
 /**
  * La clase SingerMapper podria ser declarada como una clase interna static asi
  * podemos compartir RowMapper<Singer> entre multiples metodos de busqueda en la clase DAO
+ *
+ * Descripcion del funcionamiento de los metodos de busqueda:
+ * 1. La clase RowMapperCfg se encarga de la configuracion para la conexion a una base de datos Mysql
+ * 2.La clase de configuracion crea los beans dataSource, singerDao
+ * 3. el bean singerDao provee la implementacion que es la clase RowMapperDao
+ * 4. la clase que hace la prueba esa en test/com.ceva.spring6.six.rowmapper.JdbcRowMapperConfigTest
  */
 public class RowMapperDao implements SingerDao{
     private NamedParameterJdbcTemplate namedTemplate;
@@ -43,6 +49,7 @@ public class RowMapperDao implements SingerDao{
 //        ));
 //    }
 
+    // en este caso la clase mapper no fue declarada como clase interna static pero llamamos a la clase SingerMapper
     @Override
     public Set<Singer> findAll() {
         return new HashSet<>(namedTemplate.query("SELECT * FROM singer", new SingerMapper()));
@@ -74,14 +81,16 @@ public class RowMapperDao implements SingerDao{
         });
     }
 
-//    @Override
-//    public Set<Singer> findAllWithAlbums() {
-//        var sqlQuery = "SELECT s.singer_id, s.first_name, s.last_name, s.birth_date, " +
-//                "a.album_id AS album_id, a.title, a.release_date " +
-//                "FROM singer s " +
-//                "LEFT JOIN album a on s.singer_id = a.singer_id";
-//        return new HashSet<>(namedTemplate.query(sqlQuery, new SingerWithAlbumsExtractor()));
-//    }
+    // Obtenemos una lista de Singer con sus respectivos Album.
+    // Aunque la clase SingerWithAlbumsExtractor no es realmente necesaria porque se podria pasar una expresion lambda.
+    @Override
+    public Set<Singer> findAllWithAlbumsUsingResultSetExtractor() {
+        var sqlQuery = "SELECT s.id, s.first_name, s.last_name, s.birth_date, " +
+                "a.id AS album_id, a.title, a.release_date " +
+                "FROM singer s " +
+                "RIGHT JOIN album a on s.id = a.singer_id";
+        return new HashSet<>(namedTemplate.query(sqlQuery, new SingerWithAlbumsExtractor()));
+    }
 
 //    @Override
 //    public Set<Singer> findAllWithAlbums(){
