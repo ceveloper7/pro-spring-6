@@ -16,7 +16,7 @@ public class RepoDemo {
         singers.forEach(singer -> LOGGER.info(singer.toString()));
 
         LOGGER.info("--------------------------");
-        var singerByFirstName = singerRepo.findByFirstName("John");
+        var singerByFirstName = singerRepo.findByFirstName("Ben");
         singerByFirstName.forEach(singer -> LOGGER.info(singer.toString()));
 
         LOGGER.info("--------------------------");

@@ -11,7 +11,7 @@ import java.util.Set;
 import static com.ceva.spring6.six.QueryConstants.ALL_SELECT;
 
 /**
- * La clase abstracta MappingSqlQuery permite modelar operaciones de consulta
+ * La clase abstracta MappingSqlQuery<T> permite modelar operaciones de consulta
  */
 public class SelectAllSingers extends MappingSqlQuery<Singer> {
 

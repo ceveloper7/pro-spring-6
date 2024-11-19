@@ -34,14 +34,16 @@ import static com.ceva.spring6.six.QueryConstants.FIND_SINGER_ALBUM;
  */
 @Repository("singerRepo")
 public class SingerJdbcRepo implements SingerRepo{
-
     private static final Logger LOGGER = LoggerFactory.getLogger(SingerJdbcRepo.class);
+
     private DataSource dataSource;
+
     private SelectAllSingers selectAllSingers;
     private SelectSingerByFirstName selectSingerByFirstName;
     private SelectSingerById selectSingerById;
     private UpdateSinger updateSinger;
     private InsertSinger insertSinger;
+    // Batching Operations
     private InsertSingerAlbum insertSingerAlbum;
     private StoredProcedureFirstNameById storedProcedureFirstNameById;
 
@@ -58,9 +60,11 @@ public class SingerJdbcRepo implements SingerRepo{
         this.storedProcedureFirstNameById = new StoredProcedureFirstNameById(dataSource);
 
     }
+
     public DataSource getDataSource() {
         return dataSource;
     }
+
     @Override
     public List<Singer> findAll() {
         return selectAllSingers.execute();
@@ -73,7 +77,7 @@ public class SingerJdbcRepo implements SingerRepo{
 
     @Override
     public String findNameById(Long id) {
-        return selectSingerById.executeByNamedParam(Map.of("singer_id", id)).toString();
+        return selectSingerById.executeByNamedParam(Map.of("id", id)).toString();
     }
 
     @Override
@@ -96,7 +100,7 @@ public class SingerJdbcRepo implements SingerRepo{
             Map<Long, Singer> map = new HashMap<>();
             Singer singer;
             while (rs.next()) {
-                var singerID = rs.getLong("singer_id");
+                var singerID = rs.getLong("id");
                 singer = map.computeIfAbsent(singerID,
                         s-> {
                             try {

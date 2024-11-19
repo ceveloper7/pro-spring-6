@@ -15,7 +15,7 @@ public class InsertSinger extends SqlUpdate{
         super.declareParameter(new SqlParameter("last_name", Types.VARCHAR));
         super.declareParameter(new SqlParameter("birth_date", Types.DATE));
         // declaramos el nombre de la primary key de
-        super.setGeneratedKeysColumnNames("singer_id");
+        super.setGeneratedKeysColumnNames("id");
         // indicamos al controlador JDBC que recupere la clave generada
         super.setReturnGeneratedKeys(true);
     }

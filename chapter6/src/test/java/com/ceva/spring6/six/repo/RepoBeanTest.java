@@ -50,8 +50,8 @@ public class RepoBeanTest {
         var singerRepo = ctx.getBean("singerRepo", SingerRepo.class);
         assertNotNull(singerRepo);
 
-        var singer = new Singer(1L, "John Clayton", "Mayer",
-                LocalDate.of(1977,10, 16),
+        var singer = new Singer(2L, "John Clayton", "Mayer",
+                LocalDate.of(1975,4, 1),
                 Set.of());
         singerRepo.update(singer);
 

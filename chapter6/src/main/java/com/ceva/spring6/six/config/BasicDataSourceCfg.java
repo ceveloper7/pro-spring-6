@@ -17,6 +17,7 @@ import javax.sql.DataSource;
 @PropertySource("classpath:db/jdbc.properties")
 public class BasicDataSourceCfg {
     private static Logger LOGGER = LoggerFactory.getLogger(BasicDataSourceCfg.class);
+
     @Value("${jdbc.driverClassName}")
     private String driverClassName;
 
