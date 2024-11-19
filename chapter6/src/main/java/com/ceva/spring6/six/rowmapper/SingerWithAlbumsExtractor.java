@@ -14,7 +14,7 @@ import java.util.Set;
 
 /**
  * metodo extractData obtenemos un ResultSet y la convertirmos en una lista de registros
- * que contienen los cantantes con sus respectivos albumes producidos.
+ * que contienen los cantantes (father table) con sus respectivos albumes (child table) producidos.
  */
 public class SingerWithAlbumsExtractor implements ResultSetExtractor<Set<Singer>> {
     @Override
@@ -29,15 +29,16 @@ public class SingerWithAlbumsExtractor implements ResultSetExtractor<Set<Singer>
                         rs.getString("first_name"),
                         rs.getString("last_name"),
                         rs.getDate("birth_date").toLocalDate(),
-                        Set.of());
+                        new HashSet<>()
+                        //Set.of()
+                );
                 map.put(singer_id, singer);
             }
 
             var albumId = rs.getLong("id");
             if (albumId > 0) {
                 Album album = new Album(albumId,singer_id,rs.getString("title"),
-                        rs.getDate("release_date").toLocalDate()
-                );
+                        rs.getDate("release_date").toLocalDate());
                 singer.albums().add(album);
             }
         }

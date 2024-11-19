@@ -64,7 +64,9 @@ public class RowMapperDao implements SingerDao{
                 Long id = rs.getLong("id");
                 singer = map.get(id);
                 if (singer == null) {
-                    singer = new Singer(id,rs.getString("first_name"),rs.getString("last_name"),
+                    singer = new Singer(id,
+                            rs.getString("first_name"),
+                            rs.getString("last_name"),
                             rs.getDate("birth_date").toLocalDate(),
                             new HashSet<>());
                     map.put(id, singer);
@@ -83,17 +85,18 @@ public class RowMapperDao implements SingerDao{
 
     // Obtenemos una lista de Singer con sus respectivos Album.
     // Aunque la clase SingerWithAlbumsExtractor no es realmente necesaria porque se podria pasar una expresion lambda.
+    // con LEFT JOIN los Singers que no poseen Album tambien seran recuperados.
     @Override
     public Set<Singer> findAllWithAlbumsUsingResultSetExtractor() {
         var sqlQuery = "SELECT s.id, s.first_name, s.last_name, s.birth_date, " +
                 "a.id AS album_id, a.title, a.release_date " +
                 "FROM singer s " +
-                "RIGHT JOIN album a on s.id = a.singer_id";
-        return new HashSet<>(namedTemplate.query(sqlQuery, new SingerWithAlbumsExtractor()));
+                "LEFT JOIN album a on s.id = a.singer_id";
+        return new HashSet<>(namedTemplate.query(ALL_JOIN_SELECT, new SingerWithAlbumsExtractor()));
     }
 
 //    @Override
-//    public Set<Singer> findAllWithAlbums(){
+//    public Set<Singer> findAllWithAlbumsUsingResultSetExtractor(){
 //        return new HashSet<>(namedTemplate.query(ALL_JOIN_SELECT, new SingerWithAlbumsExtractor()));
 //    }
 
@@ -104,14 +107,16 @@ public class RowMapperDao implements SingerDao{
 //
 //            Singer singer;
 //            while (rs.next()) {
-//                Long id = rs.getLong("singer_id");
+//                Long id = rs.getLong("id");
 //                singer = map.get(id);
 //                if (singer == null) {
 //                    singer = new Singer(id,
 //                            rs.getString("first_name"),
 //                            rs.getString("last_name"),
 //                            rs.getDate("birth_date").toLocalDate(),
-//                            Set.of());
+//                            new HashSet<>()
+//                            //Set.of()
+//                    );
 //                    map.put(id, singer);
 //                }
 //
