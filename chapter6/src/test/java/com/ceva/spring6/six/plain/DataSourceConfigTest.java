@@ -23,10 +23,11 @@ public class DataSourceConfigTest {
     private void testDataSource(DataSource dataSource) throws SQLException{
         // con el bean dataSource obtenido del contexto creamos una conexion.
         try (var connection = dataSource.getConnection();
-             var statement = connection.prepareStatement("SELECT 1");
+             // Probamos la conexion
+             var statement = connection.prepareStatement("SELECT 1 AS COLUMN1");
              var resultSet = statement.executeQuery()){
             while (resultSet.next()) {
-                int mockVal = resultSet.getInt("1");
+                int mockVal = resultSet.getInt("COLUMN1");
                 assertEquals(1, mockVal);
             }
         } catch (Exception e) {
@@ -64,7 +65,7 @@ public class DataSourceConfigTest {
         assertNotNull(dataSource);
         testDataSource(dataSource);
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
-        assertEquals("John Butler", singerDao.findNameById(3L));
+        assertEquals("John Butler", singerDao.findNameById(4L));
         ctx.close();
     }
 
@@ -75,7 +76,7 @@ public class DataSourceConfigTest {
         assertNotNull(dataSource);
         testDataSource(dataSource);
         var singerDao = ctx.getBean("singerDao", com.ceva.spring6.six.hybrid.SingerDao.class);
-        assertEquals("John Butler", singerDao.findNameById(3L));
+        assertEquals("John Butler", singerDao.findNameById(4L));
         ctx.close();
     }
 }

@@ -18,7 +18,8 @@ public class PlainJdbcDemo {
 
     static {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            //Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException ex) {
             LOGGER.error("Problem loading DB Driver!", ex);
         }

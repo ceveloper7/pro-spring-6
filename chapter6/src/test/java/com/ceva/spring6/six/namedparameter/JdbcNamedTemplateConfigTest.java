@@ -15,7 +15,7 @@ public class JdbcNamedTemplateConfigTest {
 
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
 
-        assertEquals("John Alexander Waymon", singerDao.findNameById(1L));
+        assertEquals("Ben Barnes", singerDao.findNameById(3L));
         ctx.close();
     }
 }

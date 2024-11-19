@@ -12,6 +12,8 @@ import static com.ceva.spring6.six.QueryConstants.FIND_NAME;
 
 /**
  * Clase de Implementacion concreta de la interface SingerDao
+ * Initializingbean con el metodo afterPropertiesSet() nos permite asegurarnos que se hayan
+ * configurado todas las propiedades requeridad por el bean JdbcSingerDao
  */
 public class JdbcSingerDao implements SingerDao, InitializingBean {
     private static Logger LOGGER = LoggerFactory.getLogger(JdbcSingerDao.class);

@@ -9,18 +9,20 @@ import org.springframework.context.annotation.Import;
 
 import javax.sql.DataSource;
 
-
+// BasicDataSourceCfg crea el bean dataSource
 @Import(BasicDataSourceCfg.class)
 @Configuration
 @ComponentScan(basePackages = "com.ceva.spring6.six.plain.datasourcecfg_test")
 public class SpringDatasourceCfg {
+    // inyectamos el bean dataSource
     @Autowired
     DataSource dataSource;
 
+    // creamos el bean SingerDao
     @Bean
     public SingerDao singerDao(){
         JdbcSingerDao dao = new JdbcSingerDao();
-        // Creamos el bean SingerDao por medio de una instancia JdbcSingerDao
+        // configuramos el dataSource
         dao.setDataSource(dataSource);
         return dao;
     }

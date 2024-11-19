@@ -12,7 +12,7 @@ public class JdbcRowMapperConfigTest {
 
     @Test
     public void testFindAll() {
-        var ctx = new AnnotationConfigApplicationContext(TestDbCfg.class);
+        var ctx = new AnnotationConfigApplicationContext(RowMapperCfg.class);
 
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
 
@@ -25,7 +25,7 @@ public class JdbcRowMapperConfigTest {
 
     @Test
     public void testFindAllWithAlbums() {
-        var ctx = new AnnotationConfigApplicationContext(RowMapperCfg.class);
+        var ctx = new AnnotationConfigApplicationContext(TestDbCfg.class);
 
         var singerDao = ctx.getBean("singerDao", SingerDao.class);
 

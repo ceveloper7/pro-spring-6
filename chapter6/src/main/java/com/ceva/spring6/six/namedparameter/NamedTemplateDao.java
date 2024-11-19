@@ -6,6 +6,9 @@ import java.util.Map;
 
 import static com.ceva.spring6.six.QueryConstants.NAMED_FIND_NAME;
 
+/*
+ * Consultas Parametros con Nombre
+ */
 public class NamedTemplateDao implements SingerDao{
     private NamedParameterJdbcTemplate namedTemplate;
 

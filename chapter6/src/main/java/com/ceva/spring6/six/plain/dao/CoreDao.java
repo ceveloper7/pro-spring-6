@@ -11,8 +11,11 @@ import java.sql.SQLException;
 public interface CoreDao {
     // metodo que recupera una conexion
     default Connection getConnection() throws SQLException {
+//        return DriverManager.getConnection(
+//                "jdbc:mysql://localhost:3306/prospring6?useSSL=false",
+//                "barcvilla", "b4000$.");
         return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/prospring6?useSSL=false",
+                "jdbc:postgresql://localhost:5432/musicdb?useSSL=false",
                 "barcvilla", "b4000$.");
     }
 
