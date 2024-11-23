@@ -56,7 +56,8 @@ public class HibernateConfig {
     }
 
     /**
-     * La fabrica de session de Hibernate requiere un administrador de Transacciones
+     * La fabrica de session de Hibernate requiere un administrador de Transacciones o HibernateTransaction Manager
+     *
      */
     @Bean
     public PlatformTransactionManager transactionManager() {

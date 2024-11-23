@@ -22,7 +22,7 @@ public class Album extends AbstractEntity{
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "album_id")
+    @Column(name = "id")
     public Long getId() {
         return this.id;
     }

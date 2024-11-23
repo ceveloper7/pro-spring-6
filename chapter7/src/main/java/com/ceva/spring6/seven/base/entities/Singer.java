@@ -9,7 +9,10 @@ import java.util.Objects;
 import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
-
+/*
+ * left join fetch -> indica a hibernate recuperar los registros relacionados de album e instrument
+ *                    de un Singer sin importar el performance de la app
+ */
 @Entity
 @Table(name = "singer")
 @NamedQueries({
@@ -23,14 +26,31 @@ import static jakarta.persistence.GenerationType.IDENTITY;
         @NamedQuery(name="Singer.findAllWithAlbum",
                 query="""
       				select distinct s from Singer s 
-					join fetch s.albums a 
-					join fetch s.instruments i 
+					left join fetch s.albums a 
+					left join fetch s.instruments i 
 					""")
 })
 
 @NamedStoredProcedureQuery(
         name = "getFirstNameById",
         procedureName = "getFirstNameById",
+        parameters = {
+                @StoredProcedureParameter(
+                        name = "in_id",
+                        type = Long.class,
+                        mode = ParameterMode.IN
+                ),
+                @StoredProcedureParameter(
+                        name = "fn_res",
+                        type = String.class,
+                        mode = ParameterMode.OUT
+                )
+        }
+)
+
+@NamedStoredProcedureQuery(
+        name = "getFirstNameByIdProc",
+        procedureName = "getFirstNameByIdProc",
         parameters = {
                 @StoredProcedureParameter(
                         name = "in_id",
@@ -60,7 +80,7 @@ public class Singer extends AbstractEntity{
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "singer_id")
+    @Column(name = "id")
     public Long getId() {
         return this.id;
     }

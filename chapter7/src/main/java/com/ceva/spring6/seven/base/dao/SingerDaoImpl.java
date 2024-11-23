@@ -12,13 +12,16 @@ import org.hibernate.SessionFactory;
 import org.hibernate.procedure.ProcedureCall;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.CallableStatement;
 import java.sql.Date;
 import java.sql.Types;
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
@@ -31,6 +34,7 @@ public class SingerDaoImpl implements SingerDao{
     // Spring conecta la propiedad sessionFactory mediante el constructor
     private SessionFactory sessionFactory;
 
+    @Autowired
     public SingerDaoImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
@@ -38,7 +42,7 @@ public class SingerDaoImpl implements SingerDao{
     @Transactional(readOnly = true)
     @Override
     public List<Singer> findAll() {
-        return sessionFactory.getCurrentSession().createQuery("FROM Singer s", Singer.class).list();
+        return sessionFactory.getCurrentSession().createQuery("SELECT s FROM Singer s", Singer.class).list();
     }
 
     /**
@@ -48,14 +52,15 @@ public class SingerDaoImpl implements SingerDao{
      * ALL_SELECT utiliza parametros con nombres.
      */
     private static final String ALL_SELECT = """
-            select distinct s.FIRST_NAME, s.LAST_NAME, a.TITLE, a.RELEASE_DATE, i.INSTRUMENT_ID
+            select distinct s.id, s.FIRST_NAME, s.LAST_NAME, s.birth_date, a.id, a.TITLE, a.RELEASE_DATE, i.INSTRUMENT_ID
             from SINGER s
-            inner join ALBUM a on s.singer_id = a.SINGER_ID
-            inner join SINGER_INSTRUMENT si on s.singer_id = si.SINGER_ID
+            inner join ALBUM a on s.id = a.SINGER_ID
+            inner join SINGER_INSTRUMENT si on s.id = si.SINGER_ID
             inner join INSTRUMENT i on si.INSTRUMENT_ID = i.INSTRUMENT_ID
             where s.FIRST_NAME = :firstName and s.LAST_NAME= :lastName
             """;
 
+    // usamos SQL Native Query
     @Transactional
     @Override
     public Singer findAllDetails(String firstName, String lastName) {
@@ -70,10 +75,13 @@ public class SingerDaoImpl implements SingerDao{
 
         for (Tuple item : results) {
             if (singer.getFirstName() == null && singer.getLastName() == null) {
+                singer.setId(((Number)item.get("id")).longValue());
                 singer.setFirstName((String) item.get("FIRST_NAME"));
                 singer.setLastName((String) item.get("LAST_NAME"));
+                singer.setBirthDate(((Date)item.get("BIRTH_DATE")).toLocalDate());
             }
             var album = new Album();
+           album.setId(((Number)item.get("id")).longValue());
             album.setTitle((String) item.get("TITLE"));
             album.setReleaseDate(((Date) item.get("RELEASE_DATE")).toLocalDate());
             singer.addAlbum(album);
@@ -134,7 +142,8 @@ public class SingerDaoImpl implements SingerDao{
                 .createQuery("select s.firstName as fn, s.lastName as ln from Singer s", Tuple.class)
                 .getResultList();
 
-        return projResult.stream().map(tuple -> tuple.get("fn", String.class) + " " + tuple.get("ln", String.class))
+        return projResult.stream()
+                .map(tuple -> tuple.get("fn", String.class) + " " + tuple.get("ln", String.class))
                 .collect(Collectors.toSet());
     }
 
@@ -161,6 +170,18 @@ public class SingerDaoImpl implements SingerDao{
         ProcedureCall procedureCall =
                 sessionFactory.getCurrentSession()
                         .createNamedStoredProcedureQuery("getFirstNameById");
+        procedureCall.setParameter("in_id", id);
+        procedureCall.setParameter("fn_res", "");
+        procedureCall.execute();
+        return  procedureCall.getOutputParameterValue("fn_res").toString();
+    }
+
+    @Transactional(readOnly = true)
+    @Override
+    public String findFirstNameByIdUsingProcV2(Long id) {
+        ProcedureCall procedureCall =
+                sessionFactory.getCurrentSession()
+                        .createNamedStoredProcedureQuery("getFirstNameByIdProc");
         procedureCall.setParameter("in_id", id);
         procedureCall.setParameter("fn_res", "");
         procedureCall.execute();
